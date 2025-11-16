@@ -3,6 +3,8 @@ import { Brush, Eraser } from "lucide-react";
 interface BrushControlsProps {
   brushSize: number;
   onBrushSizeChange: (size: number) => void;
+  brushOpacity: number;
+  onBrushOpacityChange: (opacity: number) => void;
   isEraser: boolean;
   onToggleEraser: () => void;
 }
@@ -12,6 +14,8 @@ interface BrushControlsProps {
 export default function BrushControls({
   brushSize,
   onBrushSizeChange,
+  brushOpacity,
+  onBrushOpacityChange,
   isEraser,
   onToggleEraser,
 }: BrushControlsProps) {
@@ -48,6 +52,29 @@ export default function BrushControls({
           onChange={(e) => onBrushSizeChange(Number(e.target.value))}
           className="w-32 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
         />
+      </div>
+
+      {/* Brush Opacity Control */}
+      <div className="flex items-center gap-3">
+        <label className="text-sm font-medium text-gray-700 min-w-fit">
+          Opacity
+        </label>
+        <select
+          value={brushOpacity}
+          onChange={(e) => onBrushOpacityChange(Number(e.target.value))}
+          className="px-2 py-1 text-sm text-gray-700 bg-white border border-gray-200 rounded-md hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        >
+          <option value={1}>100%</option>
+          <option value={0.9}>90%</option>
+          <option value={0.8}>80%</option>
+          <option value={0.7}>70%</option>
+          <option value={0.6}>60%</option>
+          <option value={0.5}>50%</option>
+          <option value={0.4}>40%</option>
+          <option value={0.3}>30%</option>
+          <option value={0.2}>20%</option>
+          <option value={0.1}>10%</option>
+        </select>
       </div>
 
       {/* Quick Size Buttons */}

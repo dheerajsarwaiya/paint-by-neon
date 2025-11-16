@@ -31,13 +31,18 @@ export const drawLine = (
   y2: number,
   color: string,
   size: number,
-  isEraser: boolean
+  isEraser: boolean,
+  opacity: number = 0.4
 ) => {
   ctx.save();
   ctx.strokeStyle = color;
   ctx.lineWidth = size;
   ctx.lineCap = "round";
   ctx.lineJoin = "round";
+
+  if (!isEraser) {
+    ctx.globalAlpha = opacity;
+  }
 
   if (isEraser) {
     ctx.globalCompositeOperation = "destination-out";
