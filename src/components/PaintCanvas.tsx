@@ -10,6 +10,7 @@ interface PaintCanvasProps {
   sketchImageDataUrl: string | null;
   brushSize: number;
   brushColor: string;
+  brushOpacity: number;
   isEraser: boolean;
   isPanMode: boolean;
   scale: number;
@@ -29,6 +30,7 @@ export default function PaintCanvas({
   sketchImageDataUrl,
   brushSize,
   brushColor,
+  brushOpacity,
   isEraser,
   isPanMode,
   scale,
@@ -246,7 +248,8 @@ export default function PaintCanvas({
       currentPoint.y,
       brushColor,
       brushSize,
-      isEraser
+      isEraser,
+      brushOpacity
     );
 
     setLastPoint(currentPoint);

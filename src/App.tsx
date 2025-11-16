@@ -15,6 +15,7 @@ function App() {
   const [dominantColors, setDominantColors] = useState<string[]>([]);
   const [brushSize, setBrushSize] = useState(10);
   const [brushColor, setBrushColor] = useState("#000000");
+  const [brushOpacity, setBrushOpacity] = useState(0.3);
   const [isEraser, setIsEraser] = useState(false);
   const [isPanMode, setIsPanMode] = useState(false);
   const [scale, setScale] = useState(1);
@@ -126,6 +127,8 @@ function App() {
             <BrushControls
               brushSize={brushSize}
               onBrushSizeChange={setBrushSize}
+              brushOpacity={brushOpacity}
+              onBrushOpacityChange={setBrushOpacity}
               isEraser={isEraser}
               onToggleEraser={() => setIsEraser(!isEraser)}
             />
@@ -187,6 +190,7 @@ function App() {
                 sketchImageDataUrl={sketchImageDataUrl}
                 brushSize={brushSize}
                 brushColor={brushColor}
+                brushOpacity={brushOpacity}
                 isEraser={isEraser}
                 isPanMode={isPanMode}
                 scale={scale}
