@@ -33,11 +33,11 @@ export default function ImageUploader({ onImageUpload }: ImageUploaderProps) {
             await posterizeImage(blurredDataUrl, 6, 70);
 
           const grayscaleDataUrl = await toGrayscale(posterizedDataUrl);
-          const { imageDataUrl: finalBwTemplateUrl } = await posterizeImage(
-            grayscaleDataUrl,
-            4, // Use 3-5 levels for limited shades of gray
-            10 // Threshold doesn't matter much here since colors are already 1D (grayscale)
-          );
+          // const { imageDataUrl: finalBwTemplateUrl } = await posterizeImage(
+          //   grayscaleDataUrl,
+          //   4, // Use 3-5 levels for limited shades of gray
+          //   10 // Threshold doesn't matter much here since colors are already 1D (grayscale)
+          // );
 
           // // 3. CREATE THE OUTLINE IMAGE (Uses the posterized image as input)
           // const outlineDataUrl = await createOutlineImage(
@@ -45,7 +45,7 @@ export default function ImageUploader({ onImageUpload }: ImageUploaderProps) {
           //   40 // Adjust this for line quality
           // );
           // onImageUpload(posterizedDataUrl, dominantColors);
-          onImageUpload(posterizedDataUrl, finalBwTemplateUrl, dominantColors);
+          onImageUpload(posterizedDataUrl, grayscaleDataUrl, dominantColors);
         } catch (error) {
           console.error("Failed to process image:", error);
           onImageUpload(result, result);

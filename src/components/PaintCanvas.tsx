@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { Point } from "../types/canvas";
 import {
   // getCursorPosition,
@@ -53,29 +53,45 @@ export default function PaintCanvas({
   const [lastPanPoint, setLastPanPoint] = useState<Point | null>(null);
 
   useEffect(() => {
-    if (sketchImageDataUrl && backgroundCanvasRef.current) {
-      loadImageToCanvas(
-        sketchImageDataUrl,
-        backgroundCanvasRef.current
-        // imageOpacity
-      );
-
-      if (drawingCanvasRef.current) {
-        drawingCanvasRef.current.width = backgroundCanvasRef.current.width;
-        drawingCanvasRef.current.height = backgroundCanvasRef.current.height;
-
-        const ctx = drawingCanvasRef.current.getContext("2d");
-        if (ctx && undoHistory.length === 0) {
-          const imageData = ctx.getImageData(
-            0,
-            0,
-            drawingCanvasRef.current.width,
-            drawingCanvasRef.current.height
+    const setupCanvases = async () => {
+      if (
+        sketchImageDataUrl &&
+        backgroundCanvasRef.current &&
+        drawingCanvasRef.current
+      ) {
+        try {
+          // Wait for the background image to load and set canvas dimensions
+          await loadImageToCanvas(
+            sketchImageDataUrl,
+            backgroundCanvasRef.current
           );
-          onHistoryUpdate(imageData);
+
+          // Now set the drawing canvas to match the background canvas dimensions
+          const backgroundCanvas = backgroundCanvasRef.current;
+          const drawingCanvas = drawingCanvasRef.current;
+
+          drawingCanvas.width = backgroundCanvas.width;
+          drawingCanvas.height = backgroundCanvas.height;
+
+          // Initialize the drawing canvas
+          const ctx = drawingCanvas.getContext("2d");
+          if (ctx && undoHistory.length === 0) {
+            ctx.clearRect(0, 0, drawingCanvas.width, drawingCanvas.height);
+            const imageData = ctx.getImageData(
+              0,
+              0,
+              drawingCanvas.width,
+              drawingCanvas.height
+            );
+            onHistoryUpdate(imageData);
+          }
+        } catch (error) {
+          console.error("Failed to load image to canvas:", error);
         }
       }
-    }
+    };
+
+    setupCanvases();
   }, [sketchImageDataUrl]);
 
   useEffect(() => {
@@ -127,34 +143,36 @@ export default function PaintCanvas({
     }
   };
 
-  const getCanvasCoordinates = (
-    event: React.MouseEvent | React.TouchEvent
-  ): Point | null => {
-    if (!drawingCanvasRef.current || !containerRef.current) return null;
+  const getCanvasCoordinates = useCallback(
+    (event: React.MouseEvent | React.TouchEvent): Point | null => {
+      if (!drawingCanvasRef.current || !containerRef.current) return null;
 
-    const container = containerRef.current;
-    const containerRect = container.getBoundingClientRect();
+      const container = containerRef.current;
+      const containerRect = container.getBoundingClientRect();
 
-    let clientX: number, clientY: number;
+      let clientX: number, clientY: number;
 
-    if ("touches" in event) {
-      clientX = event.touches[0].clientX;
-      clientY = event.touches[0].clientY;
-    } else {
-      clientX = event.clientX;
-      clientY = event.clientY;
-    }
+      if ("touches" in event) {
+        clientX = event.touches[0].clientX;
+        clientY = event.touches[0].clientY;
+      } else {
+        clientX = event.clientX;
+        clientY = event.clientY;
+      }
 
-    // Calculate the position relative to the container
-    const containerX = clientX - containerRect.left;
-    const containerY = clientY - containerRect.top;
+      // Calculate the position relative to the container
+      const containerX = clientX - containerRect.left;
+      const containerY = clientY - containerRect.top;
 
-    // Account for the transform (scale and offset)
-    const canvasX = (containerX - offsetX) / scale;
-    const canvasY = (containerY - offsetY) / scale;
+      // Account for the transform: scale(scale) translate(offsetX/scale, offsetY/scale)
+      // To reverse: first undo the translate, then undo the scale
+      const canvasX = (containerX - offsetX) / scale;
+      const canvasY = (containerY - offsetY) / scale;
 
-    return { x: canvasX, y: canvasY };
-  };
+      return { x: canvasX, y: canvasY };
+    },
+    [scale, offsetX, offsetY]
+  );
 
   const startDrawing = (event: React.MouseEvent | React.TouchEvent) => {
     event.preventDefault();
@@ -178,7 +196,7 @@ export default function PaintCanvas({
     }
 
     const point = getCanvasCoordinates(event);
-    if (!point) return;
+    if (!point || !drawingCanvasRef.current) return;
 
     setIsDrawing(true);
     setLastPoint(point);
@@ -205,14 +223,20 @@ export default function PaintCanvas({
       return;
     }
 
-    if (!isDrawing || !drawingCanvasRef.current || !lastPoint) return;
+    if (!isDrawing || !drawingCanvasRef.current || !lastPoint) {
+      return;
+    }
 
     const canvas = drawingCanvasRef.current;
     const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    if (!ctx) {
+      return;
+    }
 
     const currentPoint = getCanvasCoordinates(event);
-    if (!currentPoint) return;
+    if (!currentPoint) {
+      return;
+    }
 
     drawLine(
       ctx,

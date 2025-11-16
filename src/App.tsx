@@ -107,7 +107,7 @@ function App() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">
-                  Paint by Numbers
+                  Paint Over Art
                 </h1>
                 <p className="text-sm text-gray-600">
                   Upload, trace, and create beautiful artwork
