@@ -57,6 +57,40 @@ export const drawLine = (
   ctx.restore();
 };
 
+export const drawSpray = (
+  ctx: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  color: string,
+  size: number,
+  opacity: number = 0.4,
+  density: number = 50
+) => {
+  ctx.save();
+  ctx.fillStyle = color;
+  ctx.globalAlpha = opacity;
+  ctx.globalCompositeOperation = "source-over";
+
+  // Draw multiple small dots in a circular area
+  const radius = size / 2;
+  for (let i = 0; i < density; i++) {
+    // Random angle and distance from center
+    const angle = Math.random() * Math.PI * 2;
+    const distance = Math.random() * radius;
+    
+    const dotX = x + Math.cos(angle) * distance;
+    const dotY = y + Math.sin(angle) * distance;
+    
+    // Draw small dot (size varies slightly for more natural look)
+    const dotSize = Math.random() * 1.5 + 0.5;
+    ctx.beginPath();
+    ctx.arc(dotX, dotY, dotSize, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  ctx.restore();
+};
+
 export const loadImageToCanvas = (
   imageDataUrl: string,
   canvas: HTMLCanvasElement

@@ -1,12 +1,14 @@
-import { Brush, Eraser } from "lucide-react";
+import { Brush, Eraser, SprayCan } from "lucide-react";
+
+export type ToolType = "brush" | "spray" | "eraser";
 
 interface BrushControlsProps {
   brushSize: number;
   onBrushSizeChange: (size: number) => void;
   brushOpacity: number;
   onBrushOpacityChange: (opacity: number) => void;
-  isEraser: boolean;
-  onToggleEraser: () => void;
+  toolType: ToolType;
+  onToolChange: (tool: ToolType) => void;
 }
 
 // const BRUSH_SIZES = [2, 5, 10, 15, 20, 30, 40, 50];
@@ -16,25 +18,49 @@ export default function BrushControls({
   onBrushSizeChange,
   brushOpacity,
   onBrushOpacityChange,
-  isEraser,
-  onToggleEraser,
+  toolType,
+  onToolChange,
 }: BrushControlsProps) {
   return (
     <div className="flex items-center gap-6 ">
-      {/* Brush/Eraser Toggle */}
-      <button
-        onClick={onToggleEraser}
-        className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors ${
-          isEraser
-            ? "bg-blue-100 text-blue-700 border border-blue-200"
-            : "bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200"
-        }`}
-      >
-        {isEraser ? <Eraser size={16} /> : <Brush size={16} />}
-        <span className="text-sm font-medium">
-          {isEraser ? "Eraser" : "Brush"}
-        </span>
-      </button>
+      {/* Tool Selection Buttons */}
+      <div className="flex items-center gap-2">
+        <button
+          onClick={() => onToolChange("brush")}
+          className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors ${
+            toolType === "brush"
+              ? "bg-blue-100 text-blue-700 border border-blue-200"
+              : "bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200"
+          }`}
+        >
+          <Brush size={16} />
+          <span className="text-sm font-medium">Brush</span>
+        </button>
+
+        <button
+          onClick={() => onToolChange("spray")}
+          className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors ${
+            toolType === "spray"
+              ? "bg-blue-100 text-blue-700 border border-blue-200"
+              : "bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200"
+          }`}
+        >
+          <SprayCan size={16} />
+          <span className="text-sm font-medium">Spray</span>
+        </button>
+
+        <button
+          onClick={() => onToolChange("eraser")}
+          className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors ${
+            toolType === "eraser"
+              ? "bg-blue-100 text-blue-700 border border-blue-200"
+              : "bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200"
+          }`}
+        >
+          <Eraser size={16} />
+          <span className="text-sm font-medium">Eraser</span>
+        </button>
+      </div>
 
       {/* Separator */}
       {/* <div className="w-px h-6 bg-gray-300"></div> */}
