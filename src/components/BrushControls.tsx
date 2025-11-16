@@ -1,0 +1,71 @@
+import { Brush, Eraser } from "lucide-react";
+
+interface BrushControlsProps {
+  brushSize: number;
+  onBrushSizeChange: (size: number) => void;
+  isEraser: boolean;
+  onToggleEraser: () => void;
+}
+
+// const BRUSH_SIZES = [2, 5, 10, 15, 20, 30, 40, 50];
+
+export default function BrushControls({
+  brushSize,
+  onBrushSizeChange,
+  isEraser,
+  onToggleEraser,
+}: BrushControlsProps) {
+  return (
+    <div className="flex items-center gap-6 ">
+      {/* Brush/Eraser Toggle */}
+      <button
+        onClick={onToggleEraser}
+        className={`flex items-center gap-2 px-3 py-1.5 rounded-md transition-colors ${
+          isEraser
+            ? "bg-blue-100 text-blue-700 border border-blue-200"
+            : "bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200"
+        }`}
+      >
+        {isEraser ? <Eraser size={16} /> : <Brush size={16} />}
+        <span className="text-sm font-medium">
+          {isEraser ? "Eraser" : "Brush"}
+        </span>
+      </button>
+
+      {/* Separator */}
+      {/* <div className="w-px h-6 bg-gray-300"></div> */}
+
+      {/* Brush Size Control */}
+      <div className="flex items-center gap-3">
+        <label className="text-sm font-medium text-gray-700 min-w-fit">
+          {brushSize}px
+        </label>
+        <input
+          type="range"
+          min="1"
+          max="50"
+          value={brushSize}
+          onChange={(e) => onBrushSizeChange(Number(e.target.value))}
+          className="w-32 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+        />
+      </div>
+
+      {/* Quick Size Buttons */}
+      {/* <div className="flex items-center gap-1">
+        {BRUSH_SIZES.slice(0, 4).map((size) => (
+          <button
+            key={size}
+            onClick={() => onBrushSizeChange(size)}
+            className={`px-2 py-1 text-xs rounded border transition-colors ${
+              brushSize === size
+                ? "bg-blue-100 text-blue-700 border-blue-200"
+                : "bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100"
+            }`}
+          >
+            {size}
+          </button>
+        ))}
+      </div> */}
+    </div>
+  );
+}
