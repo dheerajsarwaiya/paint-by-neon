@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState, useCallback, forwardRef, useImperativeHandle } from "react";
 import { Point } from "../types/canvas";
+import type { ToolType } from "./BrushControls";
 import {
   // getCursorPosition,
   drawLine,
+  drawSpray,
   loadImageToCanvas,
 } from "../utils/canvasHelpers";
 import { getCanvasImageData } from "../utils/canvasSerializer";
@@ -13,7 +15,7 @@ interface PaintCanvasProps {
   brushSize: number;
   brushColor: string;
   brushOpacity: number;
-  isEraser: boolean;
+  toolType: ToolType;
   isPanMode: boolean;
   scale: number;
   offsetX: number;
@@ -39,7 +41,7 @@ const PaintCanvas = forwardRef<PaintCanvasRef, PaintCanvasProps>((props, ref) =>
     brushSize,
     brushColor,
     brushOpacity,
-    isEraser,
+    toolType,
     isPanMode,
     scale,
     offsetX,
@@ -269,17 +271,23 @@ const PaintCanvas = forwardRef<PaintCanvasRef, PaintCanvasProps>((props, ref) =>
       return;
     }
 
-    drawLine(
-      ctx,
-      lastPoint.x,
-      lastPoint.y,
-      currentPoint.x,
-      currentPoint.y,
-      brushColor,
-      brushSize,
-      isEraser,
-      brushOpacity
-    );
+    if (toolType === "spray") {
+      // For spray paint, draw at current point
+      drawSpray(ctx, currentPoint.x, currentPoint.y, brushColor, brushSize, brushOpacity);
+    } else {
+      // For brush and eraser, draw lines
+      drawLine(
+        ctx,
+        lastPoint.x,
+        lastPoint.y,
+        currentPoint.x,
+        currentPoint.y,
+        brushColor,
+        brushSize,
+        toolType === "eraser",
+        brushOpacity
+      );
+    }
 
     setLastPoint(currentPoint);
   };

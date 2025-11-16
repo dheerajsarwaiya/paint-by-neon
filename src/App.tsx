@@ -5,7 +5,7 @@ import { saveProject, loadProject } from "./utils/projectSave";
 import { exportCanvasAsImage } from "./utils/exportCanvas";
 import PaintCanvas from "./components/PaintCanvas";
 import ColorPalette from "./components/ColorPalette";
-import BrushControls from "./components/BrushControls";
+import BrushControls, { ToolType } from "./components/BrushControls";
 import CanvasControls from "./components/CanvasControls";
 import HistoryControls from "./components/HistoryControls";
 import ColorHighlightOverlay from "./components/ColorHighlightOverlay";
@@ -19,7 +19,7 @@ function App() {
   const [brushSize, setBrushSize] = useState(10);
   const [brushColor, setBrushColor] = useState("#000000");
   const [brushOpacity, setBrushOpacity] = useState(0.3);
-  const [isEraser, setIsEraser] = useState(false);
+  const [toolType, setToolType] = useState<ToolType>("brush");
   const [isPanMode, setIsPanMode] = useState(false);
   const [scale, setScale] = useState(1);
   const [offsetX, setOffsetX] = useState(0);
@@ -130,7 +130,7 @@ function App() {
           scale,
           offsetX,
           offsetY,
-          isEraser,
+          isEraser: toolType === "eraser",
           isPanMode,
           isColorHighlightEnabled,
         }
@@ -170,7 +170,7 @@ function App() {
       setScale(data.settings.scale);
       setOffsetX(data.settings.offsetX);
       setOffsetY(data.settings.offsetY);
-      setIsEraser(data.settings.isEraser);
+      setToolType(data.settings.isEraser ? "eraser" : "brush");
       setIsPanMode(data.settings.isPanMode);
       setIsColorHighlightEnabled(data.settings.isColorHighlightEnabled);
 
@@ -259,8 +259,8 @@ function App() {
               onBrushSizeChange={setBrushSize}
               brushOpacity={brushOpacity}
               onBrushOpacityChange={setBrushOpacity}
-              isEraser={isEraser}
-              onToggleEraser={() => setIsEraser(!isEraser)}
+              toolType={toolType}
+              onToolChange={setToolType}
             />
           </div>
           <div className="min-w-0 ">
@@ -327,7 +327,7 @@ function App() {
                 brushSize={brushSize}
                 brushColor={brushColor}
                 brushOpacity={brushOpacity}
-                isEraser={isEraser}
+                toolType={toolType}
                 isPanMode={isPanMode}
                 scale={scale}
                 offsetX={offsetX}
