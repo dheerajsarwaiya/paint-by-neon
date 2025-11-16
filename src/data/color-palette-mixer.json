@@ -1,0 +1,7561 @@
+[
+  {
+    "name": "Slate 50",
+    "hex": "#F8FAFC",
+    "r": 248,
+    "g": 250,
+    "b": 252,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Highest tint. Almost pure white with a microscopic touch of blue/black."
+  },
+  {
+    "name": "Slate 100",
+    "hex": "#F1F5F9",
+    "r": 241,
+    "g": 245,
+    "b": 249,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) High tint of blue-gray."
+  },
+  {
+    "name": "Slate 200",
+    "hex": "#E2E8F0",
+    "r": 226,
+    "g": 232,
+    "b": 240,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Light gray, balanced with White and a touch of the two blues."
+  },
+  {
+    "name": "Slate 300",
+    "hex": "#CBD5E1",
+    "r": 203,
+    "g": 213,
+    "b": 225,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Mid-light gray. Increase blue and dark components slightly."
+  },
+  {
+    "name": "Slate 400",
+    "hex": "#94A3B8",
+    "r": 148,
+    "g": 163,
+    "b": 184,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Heavy blue-gray tone. White is still dominant, tempered by Burnt Umber and Ultramarine."
+  },
+  {
+    "name": "Slate 500",
+    "hex": "#64748B",
+    "r": 100,
+    "g": 116,
+    "b": 139,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deep neutral blue/gray. Ultramarine is the main hue; Burnt Umber and White create the muted tone."
+  },
+  {
+    "name": "Slate 600",
+    "hex": "#475569",
+    "r": 71,
+    "g": 85,
+    "b": 105,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade. Dominated by Ultramarine and Umber, with a touch of Black for depth."
+  },
+  {
+    "name": "Slate 700",
+    "hex": "#334155",
+    "r": 51,
+    "g": 65,
+    "b": 85,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deep shade of blue-gray. Balanced Ultramarine, Umber, and Black."
+  },
+  {
+    "name": "Slate 800",
+    "hex": "#1E293B",
+    "r": 30,
+    "g": 41,
+    "b": 59,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very dark blue-black. Heavy on Black and Ultramarine, Umber retains complexity."
+  },
+  {
+    "name": "Slate 900",
+    "hex": "#0F172A",
+    "r": 15,
+    "g": 23,
+    "b": 42,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "Near black. Black is muted and complexified by Burnt Umber and Ultramarine Blue."
+  },
+  {
+    "name": "Slate 950",
+    "hex": "#08101E",
+    "r": 8,
+    "g": 16,
+    "b": 30,
+    "mix": {
+      "white": 0,
+      "black": 6,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deepest shade. Requires high Black/Ultramarine ratio."
+  },
+
+  {
+    "name": "Gray 50",
+    "hex": "#F9FAFB",
+    "r": 249,
+    "g": 250,
+    "b": 251,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Highest tint. Almost pure white with minimal dark components."
+  },
+  {
+    "name": "Gray 100",
+    "hex": "#F3F4F6",
+    "r": 243,
+    "g": 244,
+    "b": 246,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Lightest gray tint."
+  },
+  {
+    "name": "Gray 200",
+    "hex": "#E5E7EB",
+    "r": 229,
+    "g": 231,
+    "b": 235,
+    "mix": {
+      "white": 6,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light neutral gray. White with a small amount of Black."
+  },
+  {
+    "name": "Gray 300",
+    "hex": "#D1D5DB",
+    "r": 209,
+    "g": 213,
+    "b": 219,
+    "mix": {
+      "white": 5,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light neutral gray. Simple White/Black mix."
+  },
+  {
+    "name": "Gray 400",
+    "hex": "#9CA3AF",
+    "r": 156,
+    "g": 163,
+    "b": 175,
+    "mix": {
+      "white": 3,
+      "black": 1,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-tone gray. Balanced White, Black, and Burnt Umber."
+  },
+  {
+    "name": "Gray 500",
+    "hex": "#6B7280",
+    "r": 107,
+    "g": 114,
+    "b": 128,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Warm gray. Mix White and Burnt Umber for a warmer, more natural gray."
+  },
+  {
+    "name": "Gray 600",
+    "hex": "#4B5563",
+    "r": 75,
+    "g": 85,
+    "b": 99,
+    "mix": {
+      "white": 1,
+      "black": 2,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker neutral gray. Increase Black ratio."
+  },
+  {
+    "name": "Gray 700",
+    "hex": "#374151",
+    "r": 55,
+    "g": 65,
+    "b": 81,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark gray. Dominated by Black/Umber."
+  },
+  {
+    "name": "Gray 800",
+    "hex": "#1F2937",
+    "r": 31,
+    "g": 41,
+    "b": 55,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very dark gray. High black ratio."
+  },
+  {
+    "name": "Gray 900",
+    "hex": "#111827",
+    "r": 17,
+    "g": 24,
+    "b": 39,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black gray. Maximize black and add Umber for complexity."
+  },
+  {
+    "name": "Gray 950",
+    "hex": "#0D131F",
+    "r": 13,
+    "g": 19,
+    "b": 31,
+    "mix": {
+      "white": 0,
+      "black": 7,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deepest gray. Mostly Black."
+  },
+
+  {
+    "name": "Zinc 50",
+    "hex": "#FAFAFA",
+    "r": 250,
+    "g": 250,
+    "b": 250,
+    "mix": {
+      "white": 10,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Pure White."
+  },
+  {
+    "name": "Zinc 100",
+    "hex": "#F4F4F5",
+    "r": 244,
+    "g": 244,
+    "b": 245,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very subtle tint of gray."
+  },
+  {
+    "name": "Zinc 200",
+    "hex": "#E4E4E7",
+    "r": 228,
+    "g": 228,
+    "b": 231,
+    "mix": {
+      "white": 7,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light neutral gray."
+  },
+  {
+    "name": "Zinc 300",
+    "hex": "#D4D4D8",
+    "r": 212,
+    "g": 212,
+    "b": 216,
+    "mix": {
+      "white": 5,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light neutral gray."
+  },
+  {
+    "name": "Zinc 400",
+    "hex": "#A1A1AA",
+    "r": 161,
+    "g": 161,
+    "b": 170,
+    "mix": {
+      "white": 3,
+      "black": 1,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-tone neutral gray."
+  },
+  {
+    "name": "Zinc 500",
+    "hex": "#71717A",
+    "r": 113,
+    "g": 113,
+    "b": 122,
+    "mix": {
+      "white": 1,
+      "black": 2,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-dark gray."
+  },
+  {
+    "name": "Zinc 600",
+    "hex": "#52525B",
+    "r": 82,
+    "g": 82,
+    "b": 91,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark gray. Primarily Black and Umber."
+  },
+  {
+    "name": "Zinc 700",
+    "hex": "#3F3F46",
+    "r": 63,
+    "g": 63,
+    "b": 70,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very dark gray."
+  },
+  {
+    "name": "Zinc 800",
+    "hex": "#27272A",
+    "r": 39,
+    "g": 39,
+    "b": 42,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black gray."
+  },
+  {
+    "name": "Zinc 900",
+    "hex": "#18181B",
+    "r": 24,
+    "g": 24,
+    "b": 27,
+    "mix": {
+      "white": 0,
+      "black": 6,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very near black."
+  },
+  {
+    "name": "Zinc 950",
+    "hex": "#0D0D12",
+    "r": 13,
+    "g": 13,
+    "b": 18,
+    "mix": {
+      "white": 0,
+      "black": 8,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deepest gray."
+  },
+
+  {
+    "name": "Neutral 50",
+    "hex": "#FAFAFA",
+    "r": 250,
+    "g": 250,
+    "b": 250,
+    "mix": {
+      "white": 10,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Pure White."
+  },
+  {
+    "name": "Neutral 100",
+    "hex": "#F5F5F5",
+    "r": 245,
+    "g": 245,
+    "b": 245,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very subtle tint of gray."
+  },
+  {
+    "name": "Neutral 200",
+    "hex": "#E5E5E5",
+    "r": 229,
+    "g": 229,
+    "b": 229,
+    "mix": {
+      "white": 5,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Simple light gray. White with a touch of Mars Black."
+  },
+  {
+    "name": "Neutral 300",
+    "hex": "#D4D4D4",
+    "r": 212,
+    "g": 212,
+    "b": 212,
+    "mix": {
+      "white": 4,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light neutral gray. Simple White/Black mix."
+  },
+  {
+    "name": "Neutral 400",
+    "hex": "#A3A3A3",
+    "r": 163,
+    "g": 163,
+    "b": 163,
+    "mix": {
+      "white": 2,
+      "black": 2,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-tone gray. Balanced White, Black, and Burnt Umber."
+  },
+  {
+    "name": "Neutral 500",
+    "hex": "#737373",
+    "r": 115,
+    "g": 115,
+    "b": 115,
+    "mix": {
+      "white": 1,
+      "black": 1,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Mid-gray. Mix White, Black, and Burnt Umber for a natural, complex neutral tone."
+  },
+  {
+    "name": "Neutral 600",
+    "hex": "#525252",
+    "r": 82,
+    "g": 82,
+    "b": 82,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker neutral gray. Increase Black ratio."
+  },
+  {
+    "name": "Neutral 700",
+    "hex": "#404040",
+    "r": 64,
+    "g": 64,
+    "b": 64,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark gray. Dominated by Black/Umber."
+  },
+  {
+    "name": "Neutral 800",
+    "hex": "#262626",
+    "r": 38,
+    "g": 38,
+    "b": 38,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very dark gray. High black ratio."
+  },
+  {
+    "name": "Neutral 900",
+    "hex": "#171717",
+    "r": 23,
+    "g": 23,
+    "b": 23,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 0
+    },
+    "notes": "Chromatic Black. Mars Black is muted and complexified by Red and Blue."
+  },
+  {
+    "name": "Neutral 950",
+    "hex": "#0A0A0A",
+    "r": 10,
+    "g": 10,
+    "b": 10,
+    "mix": {
+      "white": 0,
+      "black": 8,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deepest gray. Mostly Black."
+  },
+
+  {
+    "name": "Stone 50",
+    "hex": "#FAFAF9",
+    "r": 250,
+    "g": 250,
+    "b": 249,
+    "mix": {
+      "white": 10,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near white, with a minimal warm tint."
+  },
+  {
+    "name": "Stone 100",
+    "hex": "#F5F5F4",
+    "r": 245,
+    "g": 245,
+    "b": 244,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light, warm off-white."
+  },
+  {
+    "name": "Stone 200",
+    "hex": "#E7E5E4",
+    "r": 231,
+    "g": 229,
+    "b": 228,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light, warm gray/beige. White and a touch of Umber."
+  },
+  {
+    "name": "Stone 300",
+    "hex": "#D6D3D1",
+    "r": 214,
+    "g": 211,
+    "b": 209,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light stone color."
+  },
+  {
+    "name": "Stone 400",
+    "hex": "#A8A29E",
+    "r": 168,
+    "g": 162,
+    "b": 158,
+    "mix": {
+      "white": 3,
+      "black": 0,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-tone taupe/stone. White is muted heavily by Burnt Umber."
+  },
+  {
+    "name": "Stone 500",
+    "hex": "#78716C",
+    "r": 120,
+    "g": 113,
+    "b": 108,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dominant Burnt Umber with a touch of White."
+  },
+  {
+    "name": "Stone 600",
+    "hex": "#57534E",
+    "r": 87,
+    "g": 83,
+    "b": 78,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 4,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark stone. Burnt Umber dominates, Black for shade."
+  },
+  {
+    "name": "Stone 700",
+    "hex": "#44403C",
+    "r": 68,
+    "g": 64,
+    "b": 60,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 4,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper shade of stone/brown."
+  },
+  {
+    "name": "Stone 800",
+    "hex": "#292524",
+    "r": 41,
+    "g": 37,
+    "b": 36,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very dark brown-black."
+  },
+  {
+    "name": "Stone 900",
+    "hex": "#1C1917",
+    "r": 28,
+    "g": 25,
+    "b": 23,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black brown."
+  },
+  {
+    "name": "Stone 950",
+    "hex": "#0D0B0A",
+    "r": 13,
+    "g": 11,
+    "b": 10,
+    "mix": {
+      "white": 0,
+      "black": 7,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deepest brown-black."
+  },
+
+  {
+    "name": "Red 50",
+    "hex": "#FEF2F2",
+    "r": 254,
+    "g": 242,
+    "b": 242,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light pink tint. Almost entirely White."
+  },
+  {
+    "name": "Red 100",
+    "hex": "#FEE2E2",
+    "r": 254,
+    "g": 226,
+    "b": 226,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light pink."
+  },
+  {
+    "name": "Red 200",
+    "hex": "#FECACA",
+    "r": 254,
+    "g": 202,
+    "b": 202,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "High tint. Add red very slowly to the white base."
+  },
+  {
+    "name": "Red 300",
+    "hex": "#FCA5A5",
+    "r": 252,
+    "g": 165,
+    "b": 165,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light red tint. White dominant."
+  },
+  {
+    "name": "Red 400",
+    "hex": "#F87171",
+    "r": 248,
+    "g": 113,
+    "b": 113,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong red tint. Red is dominant, with White added to lighten."
+  },
+  {
+    "name": "Red 500",
+    "hex": "#EF4444",
+    "r": 239,
+    "g": 68,
+    "b": 68,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Pure, vibrant red. Use Cad Red alone."
+  },
+  {
+    "name": "Red 600",
+    "hex": "#DC2626",
+    "r": 220,
+    "g": 38,
+    "b": 38,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Slightly darker shade. Base Red with a touch of Black to deepen."
+  },
+  {
+    "name": "Red 700",
+    "hex": "#B91C1C",
+    "r": 185,
+    "g": 28,
+    "b": 28,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deep red. Red and Black/Umber balanced."
+  },
+  {
+    "name": "Red 800",
+    "hex": "#991B1B",
+    "r": 153,
+    "g": 27,
+    "b": 27,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Deep, rich shade. Use Burnt Umber instead of Black for a warm, complex red-brown shadow."
+  },
+  {
+    "name": "Red 900",
+    "hex": "#7F1D1D",
+    "r": 127,
+    "g": 29,
+    "b": 29,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep, dark red."
+  },
+  {
+    "name": "Red 950",
+    "hex": "#450A0A",
+    "r": 69,
+    "g": 10,
+    "b": 10,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black red. High ratio of dark pigments."
+  },
+
+  {
+    "name": "Orange 50",
+    "hex": "#FFF7ED",
+    "r": 255,
+    "g": 247,
+    "b": 237,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light yellow-orange tint."
+  },
+  {
+    "name": "Orange 100",
+    "hex": "#FFEDD5",
+    "r": 255,
+    "g": 237,
+    "b": 213,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light orange tint."
+  },
+  {
+    "name": "Orange 200",
+    "hex": "#FED7AA",
+    "r": 254,
+    "g": 215,
+    "b": 170,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 2,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light orange. White dominant, balanced by yellow/red."
+  },
+  {
+    "name": "Orange 300",
+    "hex": "#FDBA74",
+    "r": 253,
+    "g": 186,
+    "b": 116,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 3,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light orange. Yellow dominant, White to lighten."
+  },
+  {
+    "name": "Orange 400",
+    "hex": "#FB923C",
+    "r": 251,
+    "g": 146,
+    "b": 60,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 4,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong orange tint. Yellow and Red dominate, White for lift."
+  },
+  {
+    "name": "Orange 500",
+    "hex": "#F97316",
+    "r": 249,
+    "g": 115,
+    "b": 22,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 4,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Warm, intense orange. Cad Yellow is dominant."
+  },
+  {
+    "name": "Orange 600",
+    "hex": "#EA580C",
+    "r": 234,
+    "g": 88,
+    "b": 12,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 3,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Rich, slightly deeper orange. Balanced Yellow/Red."
+  },
+  {
+    "name": "Orange 700",
+    "hex": "#C2410C",
+    "r": 194,
+    "g": 65,
+    "b": 12,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 1,
+      "cadY": 3,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Deep shade. Use Burnt Umber to suppress vibrancy and deepen the tone."
+  },
+  {
+    "name": "Orange 800",
+    "hex": "#9A3412",
+    "r": 154,
+    "g": 52,
+    "b": 18,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 2,
+      "cadY": 2,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark, earthy orange. Red and Umber dominant."
+  },
+  {
+    "name": "Orange 900",
+    "hex": "#7C2D12",
+    "r": 124,
+    "g": 45,
+    "b": 18,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 3,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep reddish-brown."
+  },
+  {
+    "name": "Orange 950",
+    "hex": "#431407",
+    "r": 67,
+    "g": 20,
+    "b": 7,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black orange-brown."
+  },
+
+  {
+    "name": "Amber 50",
+    "hex": "#FFFBEB",
+    "r": 255,
+    "g": 251,
+    "b": 235,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely pale yellow tint."
+  },
+  {
+    "name": "Amber 100",
+    "hex": "#FEF3C7",
+    "r": 254,
+    "g": 243,
+    "b": 199,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 0,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light yellow tint. White dominant."
+  },
+  {
+    "name": "Amber 200",
+    "hex": "#FDE68A",
+    "r": 253,
+    "g": 230,
+    "b": 138,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 0,
+      "cadY": 2,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light yellow. White and Cad Yellow."
+  },
+  {
+    "name": "Amber 300",
+    "hex": "#FCD34D",
+    "r": 252,
+    "g": 211,
+    "b": 77,
+    "mix": {
+      "white": 3,
+      "black": 0,
+      "umber": 0,
+      "cadY": 4,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light yellow. Cad Yellow dominant."
+  },
+  {
+    "name": "Amber 400",
+    "hex": "#FB923C",
+    "r": 251,
+    "g": 146,
+    "b": 60,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 0,
+      "cadY": 5,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Warm, strong yellow. Cad Yellow and a touch of Red/White."
+  },
+  {
+    "name": "Amber 500",
+    "hex": "#F59E0B",
+    "r": 245,
+    "g": 158,
+    "b": 11,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 3,
+      "lemonY": 1,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Warm yellow-orange. Needs Cad Yellow + a small touch of Cad Red for the orange bias."
+  },
+  {
+    "name": "Amber 600",
+    "hex": "#D97706",
+    "r": 217,
+    "g": 119,
+    "b": 6,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 1,
+      "cadY": 4,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper amber. Add Umber to suppress vibrancy."
+  },
+  {
+    "name": "Amber 700",
+    "hex": "#B45309",
+    "r": 180,
+    "g": 83,
+    "b": 9,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 2,
+      "cadY": 3,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker, earthy amber tone."
+  },
+  {
+    "name": "Amber 800",
+    "hex": "#92400E",
+    "r": 146,
+    "g": 64,
+    "b": 14,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 2,
+      "cadY": 2,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark brown-yellow."
+  },
+  {
+    "name": "Amber 900",
+    "hex": "#78350F",
+    "r": 120,
+    "g": 53,
+    "b": 15,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 3,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very dark brown."
+  },
+  {
+    "name": "Amber 950",
+    "hex": "#451A03",
+    "r": 69,
+    "g": 26,
+    "b": 3,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black brown."
+  },
+
+  {
+    "name": "Yellow 50",
+    "hex": "#FEFCE8",
+    "r": 254,
+    "g": 252,
+    "b": 232,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely pale yellow tint."
+  },
+  {
+    "name": "Yellow 100",
+    "hex": "#FEF9C3",
+    "r": 254,
+    "g": 249,
+    "b": 195,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 1,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light yellow tint. White dominant."
+  },
+  {
+    "name": "Yellow 200",
+    "hex": "#FEF08A",
+    "r": 254,
+    "g": 240,
+    "b": 138,
+    "mix": {
+      "white": 3,
+      "black": 0,
+      "umber": 0,
+      "cadY": 2,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "High tint. Dominant white base, but needs both yellows for complexity."
+  },
+  {
+    "name": "Yellow 300",
+    "hex": "#FDE047",
+    "r": 253,
+    "g": 224,
+    "b": 71,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 0,
+      "cadY": 4,
+      "lemonY": 2,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Bright, rich yellow. Balanced Cad and Lemon Yellow, White for lift."
+  },
+  {
+    "name": "Yellow 400",
+    "hex": "#FACC15",
+    "r": 250,
+    "g": 204,
+    "b": 21,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 6,
+      "lemonY": 2,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Intense, nearly pure yellow. Primarily Cad Yellow."
+  },
+  {
+    "name": "Yellow 500",
+    "hex": "#EAB308",
+    "r": 234,
+    "g": 179,
+    "b": 8,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 3,
+      "lemonY": 1,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Warm yellow-orange. Needs Cad Yellow + a small touch of Cad Red for the orange bias."
+  },
+  {
+    "name": "Yellow 600",
+    "hex": "#CA8A04",
+    "r": 202,
+    "g": 138,
+    "b": 4,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 1,
+      "cadY": 4,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper shade. Umber added to suppress and darken."
+  },
+  {
+    "name": "Yellow 700",
+    "hex": "#A16207",
+    "r": 161,
+    "g": 98,
+    "b": 7,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 2,
+      "cadY": 3,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark, earthy yellow-brown."
+  },
+  {
+    "name": "Yellow 800",
+    "hex": "#854D0E",
+    "r": 133,
+    "g": 77,
+    "b": 14,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 2,
+      "cadY": 2,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark brown-yellow shade."
+  },
+  {
+    "name": "Yellow 900",
+    "hex": "#713F12",
+    "r": 113,
+    "g": 63,
+    "b": 18,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 3,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deep brown tone."
+  },
+  {
+    "name": "Yellow 950",
+    "hex": "#422006",
+    "r": 66,
+    "g": 32,
+    "b": 6,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black brown."
+  },
+
+  {
+    "name": "Lime 50",
+    "hex": "#F7FEE7",
+    "r": 247,
+    "g": 254,
+    "b": 231,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light yellow-green tint."
+  },
+  {
+    "name": "Lime 100",
+    "hex": "#EEF8B8",
+    "r": 238,
+    "g": 248,
+    "b": 184,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 2,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light lime tint."
+  },
+  {
+    "name": "Lime 200",
+    "hex": "#D9F99D",
+    "r": 217,
+    "g": 249,
+    "b": 157,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 3,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Light lime. White and Yellow dominant."
+  },
+  {
+    "name": "Lime 300",
+    "hex": "#BEF264",
+    "r": 190,
+    "g": 242,
+    "b": 100,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 4,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Bright lime tint. Yellow dominant."
+  },
+  {
+    "name": "Lime 400",
+    "hex": "#A3E635",
+    "r": 163,
+    "g": 230,
+    "b": 53,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 0,
+      "cadY": 5,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Strong lime. High Yellow, touch of Blue, White for intensity."
+  },
+  {
+    "name": "Lime 500",
+    "hex": "#84CC16",
+    "r": 132,
+    "g": 204,
+    "b": 22,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 3,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "Very cool, bright green. Lemon Yellow (cool) + Phthalo Blue (cool)."
+  },
+  {
+    "name": "Lime 600",
+    "hex": "#65A30D",
+    "r": 101,
+    "g": 163,
+    "b": 13,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 1,
+      "cadY": 4,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Deeper lime. Umber to suppress vibrancy."
+  },
+  {
+    "name": "Lime 700",
+    "hex": "#4D7C0F",
+    "r": 77,
+    "g": 124,
+    "b": 15,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 2,
+      "cadY": 3,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Dark, earthy green."
+  },
+  {
+    "name": "Lime 800",
+    "hex": "#3F621D",
+    "r": 63,
+    "g": 98,
+    "b": 29,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 2,
+      "cadY": 2,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Very dark, muted green."
+  },
+  {
+    "name": "Lime 900",
+    "hex": "#3A531C",
+    "r": 58,
+    "g": 83,
+    "b": 28,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 3,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Near black green."
+  },
+  {
+    "name": "Lime 950",
+    "hex": "#1A2209",
+    "r": 26,
+    "g": 34,
+    "b": 9,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Deepest green-black."
+  },
+
+  {
+    "name": "Green 50",
+    "hex": "#F0FDF4",
+    "r": 240,
+    "g": 253,
+    "b": 244,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light green tint."
+  },
+  {
+    "name": "Green 100",
+    "hex": "#DCFCE7",
+    "r": 220,
+    "g": 252,
+    "b": 231,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Very light green tint. White dominant."
+  },
+  {
+    "name": "Green 200",
+    "hex": "#BBF7D0",
+    "r": 187,
+    "g": 247,
+    "b": 208,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 0,
+      "cadY": 1,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "Pale minty green. White is the dominant base. Keep the yellow/blue ratio close."
+  },
+  {
+    "name": "Green 300",
+    "hex": "#86EFAC",
+    "r": 134,
+    "g": 239,
+    "b": 172,
+    "mix": {
+      "white": 3,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 2,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Bright green tint. Balanced Lemon Yellow/Phthalo Blue, White for lift."
+  },
+  {
+    "name": "Green 400",
+    "hex": "#4ADE80",
+    "r": 74,
+    "g": 222,
+    "b": 128,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 3,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Strong green tint. Yellow/Blue dominate, White for lift."
+  },
+  {
+    "name": "Green 500",
+    "hex": "#22C55E",
+    "r": 34,
+    "g": 197,
+    "b": 94,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 3,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "Vibrant green. Mix Lemon Yellow (cool yellow) with Phthalo Blue (cool blue)."
+  },
+  {
+    "name": "Green 600",
+    "hex": "#16A34A",
+    "r": 22,
+    "g": 163,
+    "b": 74,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 3,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Deeper green. Touch of black to shade."
+  },
+  {
+    "name": "Green 700",
+    "hex": "#15803D",
+    "r": 21,
+    "g": 128,
+    "b": 61,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 2,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Dark, slightly earthy green."
+  },
+  {
+    "name": "Green 800",
+    "hex": "#065F46",
+    "r": 6,
+    "g": 95,
+    "b": 70,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "Deep shade. Phthalo Blue + Black + a touch of Lemon Yellow to maintain hue."
+  },
+  {
+    "name": "Green 900",
+    "hex": "#054D3F",
+    "r": 5,
+    "g": 77,
+    "b": 63,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Very deep shade of green."
+  },
+  {
+    "name": "Green 950",
+    "hex": "#022C22",
+    "r": 2,
+    "g": 44,
+    "b": 34,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Near black green."
+  },
+
+  {
+    "name": "Emerald 50",
+    "hex": "#F0FAF5",
+    "r": 240,
+    "g": 250,
+    "b": 245,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light green tint."
+  },
+  {
+    "name": "Emerald 100",
+    "hex": "#D1FAE5",
+    "r": 209,
+    "g": 250,
+    "b": 229,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Very light blue-green tint."
+  },
+  {
+    "name": "Emerald 200",
+    "hex": "#A7F3D0",
+    "r": 167,
+    "g": 243,
+    "b": 208,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Light, bright blue-green."
+  },
+  {
+    "name": "Emerald 300",
+    "hex": "#6EE7B7",
+    "r": 110,
+    "g": 231,
+    "b": 183,
+    "mix": {
+      "white": 3,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Bright blue-green tint."
+  },
+  {
+    "name": "Emerald 400",
+    "hex": "#34D399",
+    "r": 52,
+    "g": 211,
+    "b": 153,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Strong blue-green. Phthalo Blue dominant."
+  },
+  {
+    "name": "Emerald 500",
+    "hex": "#10B981",
+    "r": 16,
+    "g": 185,
+    "b": 129,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 4
+    },
+    "notes": "Vibrant green. Mix Lemon Yellow (cool yellow) with Phthalo Blue (cool blue)."
+  },
+  {
+    "name": "Emerald 600",
+    "hex": "#059669",
+    "r": 5,
+    "g": 150,
+    "b": 105,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 4
+    },
+    "notes": "Deep shade. Phthalo Blue dominant, Black for shade."
+  },
+  {
+    "name": "Emerald 700",
+    "hex": "#047857",
+    "r": 4,
+    "g": 120,
+    "b": 87,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Darker shade of blue-green."
+  },
+  {
+    "name": "Emerald 800",
+    "hex": "#065F46",
+    "r": 6,
+    "g": 95,
+    "b": 70,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "Deep shade. Phthalo Blue + Black + a touch of Lemon Yellow to maintain hue."
+  },
+  {
+    "name": "Emerald 900",
+    "hex": "#044F41",
+    "r": 4,
+    "g": 79,
+    "b": 65,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Very deep shade of green."
+  },
+  {
+    "name": "Emerald 950",
+    "hex": "#022C24",
+    "r": 2,
+    "g": 44,
+    "b": 36,
+    "mix": {
+      "white": 0,
+      "black": 6,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Near black blue-green."
+  },
+
+  {
+    "name": "Teal 50",
+    "hex": "#F0FDFA",
+    "r": 240,
+    "g": 253,
+    "b": 250,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light blue-green tint."
+  },
+  {
+    "name": "Teal 100",
+    "hex": "#CCFBF1",
+    "r": 204,
+    "g": 251,
+    "b": 241,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Very light teal tint."
+  },
+  {
+    "name": "Teal 200",
+    "hex": "#99F6E4",
+    "r": 153,
+    "g": 246,
+    "b": 228,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Light, bright teal. Phthalo Blue dominant."
+  },
+  {
+    "name": "Teal 300",
+    "hex": "#5EEAD4",
+    "r": 94,
+    "g": 234,
+    "b": 212,
+    "mix": {
+      "white": 3,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Bright teal tint."
+  },
+  {
+    "name": "Teal 400",
+    "hex": "#2DD4BF",
+    "r": 45,
+    "g": 212,
+    "b": 191,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Strong teal. Phthalo Blue highly dominant."
+  },
+  {
+    "name": "Teal 500",
+    "hex": "#14B8A6",
+    "r": 20,
+    "g": 184,
+    "b": 166,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Pure teal. Phthalo Blue and Lemon Yellow (cool primaries)."
+  },
+  {
+    "name": "Teal 600",
+    "hex": "#0D9488",
+    "r": 13,
+    "g": 148,
+    "b": 136,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Deeper shade of teal."
+  },
+  {
+    "name": "Teal 700",
+    "hex": "#0F766E",
+    "r": 15,
+    "g": 118,
+    "b": 110,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Darker shade of teal/green."
+  },
+  {
+    "name": "Teal 800",
+    "hex": "#115E59",
+    "r": 17,
+    "g": 94,
+    "b": 89,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Dark teal shade. Phthalo Blue and Black."
+  },
+  {
+    "name": "Teal 900",
+    "hex": "#134E4A",
+    "r": 19,
+    "g": 78,
+    "b": 74,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Very dark teal."
+  },
+  {
+    "name": "Teal 950",
+    "hex": "#092C2B",
+    "r": 9,
+    "g": 44,
+    "b": 43,
+    "mix": {
+      "white": 0,
+      "black": 6,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Near black teal."
+  },
+
+  {
+    "name": "Cyan 50",
+    "hex": "#ECFEFF",
+    "r": 236,
+    "g": 254,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light blue tint."
+  },
+  {
+    "name": "Cyan 100",
+    "hex": "#CFFAFE",
+    "r": 207,
+    "g": 250,
+    "b": 254,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Very light cyan tint. White dominant."
+  },
+  {
+    "name": "Cyan 200",
+    "hex": "#A5F3FC",
+    "r": 165,
+    "g": 243,
+    "b": 252,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Light, bright cyan."
+  },
+  {
+    "name": "Cyan 300",
+    "hex": "#67E8F9",
+    "r": 103,
+    "g": 232,
+    "b": 249,
+    "mix": {
+      "white": 3,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Bright cyan tint."
+  },
+  {
+    "name": "Cyan 400",
+    "hex": "#22D3EE",
+    "r": 34,
+    "g": 211,
+    "b": 238,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Strong cyan. Phthalo Blue dominant."
+  },
+  {
+    "name": "Cyan 500",
+    "hex": "#06B6D4",
+    "r": 6,
+    "g": 182,
+    "b": 212,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 1,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 4
+    },
+    "notes": "Pure cyan. Phthalo Blue is dominant, Lemon Yellow shifts it toward green-blue."
+  },
+  {
+    "name": "Cyan 600",
+    "hex": "#0891B2",
+    "r": 8,
+    "g": 145,
+    "b": 178,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Deeper shade of cyan."
+  },
+  {
+    "name": "Cyan 700",
+    "hex": "#0E7490",
+    "r": 14,
+    "g": 116,
+    "b": 144,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Darker shade of cyan."
+  },
+  {
+    "name": "Cyan 800",
+    "hex": "#155E75",
+    "r": 21,
+    "g": 94,
+    "b": 117,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Dark cyan shade. Phthalo Blue and Black."
+  },
+  {
+    "name": "Cyan 900",
+    "hex": "#164E63",
+    "r": 22,
+    "g": 78,
+    "b": 99,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Very deep cyan."
+  },
+  {
+    "name": "Cyan 950",
+    "hex": "#082F3B",
+    "r": 8,
+    "g": 47,
+    "b": 59,
+    "mix": {
+      "white": 0,
+      "black": 6,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Near black cyan."
+  },
+
+  {
+    "name": "Sky 50",
+    "hex": "#F0F9FF",
+    "r": 240,
+    "g": 249,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light blue tint."
+  },
+  {
+    "name": "Sky 100",
+    "hex": "#E0F2FE",
+    "r": 224,
+    "g": 242,
+    "b": 254,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Very light sky blue tint."
+  },
+  {
+    "name": "Sky 200",
+    "hex": "#BAE6FD",
+    "r": 186,
+    "g": 230,
+    "b": 253,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Light, bright sky blue. White dominant."
+  },
+  {
+    "name": "Sky 300",
+    "hex": "#7DD3FC",
+    "r": 125,
+    "g": 211,
+    "b": 252,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Bright sky blue tint."
+  },
+  {
+    "name": "Sky 400",
+    "hex": "#38BDF8",
+    "r": 56,
+    "g": 189,
+    "b": 248,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Strong sky blue. Phthalo Blue dominant."
+  },
+  {
+    "name": "Sky 500",
+    "hex": "#0EA5E9",
+    "r": 14,
+    "g": 165,
+    "b": 233,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Pure sky blue. Phthalo Blue dominant, with a touch of Ultramarine for warmth."
+  },
+  {
+    "name": "Sky 600",
+    "hex": "#0284C7",
+    "r": 2,
+    "g": 132,
+    "b": 199,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Deeper sky blue."
+  },
+  {
+    "name": "Sky 700",
+    "hex": "#0369A2",
+    "r": 3,
+    "g": 105,
+    "b": 162,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 2,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Darker shade of sky blue."
+  },
+  {
+    "name": "Sky 800",
+    "hex": "#075985",
+    "r": 7,
+    "g": 89,
+    "b": 133,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 2,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Dark shade of sky blue. Black and Phthalo Blue."
+  },
+  {
+    "name": "Sky 900",
+    "hex": "#0C4A6E",
+    "r": 12,
+    "g": 74,
+    "b": 110,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Very deep shade."
+  },
+  {
+    "name": "Sky 950",
+    "hex": "#082F49",
+    "r": 8,
+    "g": 47,
+    "b": 73,
+    "mix": {
+      "white": 0,
+      "black": 6,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Near black blue."
+  },
+
+  {
+    "name": "Blue 50",
+    "hex": "#EFF6FF",
+    "r": 239,
+    "g": 246,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light blue tint."
+  },
+  {
+    "name": "Blue 100",
+    "hex": "#DBEAFE",
+    "r": 219,
+    "g": 234,
+    "b": 254,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light blue tint."
+  },
+  {
+    "name": "Blue 200",
+    "hex": "#BFDBFE",
+    "r": 191,
+    "g": 219,
+    "b": 254,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 2
+    },
+    "notes": "Light tint of blue. Needs more Phthalo (cool blue) to avoid a violet bias."
+  },
+  {
+    "name": "Blue 300",
+    "hex": "#93C5FD",
+    "r": 147,
+    "g": 197,
+    "b": 253,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 2,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Light blue tint."
+  },
+  {
+    "name": "Blue 400",
+    "hex": "#60A5FA",
+    "r": 96,
+    "g": 165,
+    "b": 250,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Strong blue tint. Ultramarine dominant."
+  },
+  {
+    "name": "Blue 500",
+    "hex": "#3B82F6",
+    "r": 59,
+    "g": 130,
+    "b": 246,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 2,
+      "phthaloB": 1
+    },
+    "notes": "Balanced blue. Ultramarine gives depth, Phthalo keeps it slightly bright."
+  },
+  {
+    "name": "Blue 600",
+    "hex": "#2563EB",
+    "r": 37,
+    "g": 99,
+    "b": 235,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Deeper blue shade."
+  },
+  {
+    "name": "Blue 700",
+    "hex": "#1D4ED8",
+    "r": 29,
+    "g": 78,
+    "b": 216,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Darker blue shade."
+  },
+  {
+    "name": "Blue 800",
+    "hex": "#1E40AF",
+    "r": 30,
+    "g": 64,
+    "b": 175,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 1
+    },
+    "notes": "Deep shade. Ultramarine is dominant; Burnt Umber neutralizes and deepens."
+  },
+  {
+    "name": "Blue 900",
+    "hex": "#1E3A8A",
+    "r": 30,
+    "g": 58,
+    "b": 138,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 5,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of blue. Ultramarine dominant."
+  },
+  {
+    "name": "Blue 950",
+    "hex": "#172554",
+    "r": 23,
+    "g": 37,
+    "b": 84,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black blue."
+  },
+
+  {
+    "name": "Indigo 50",
+    "hex": "#EEF2FF",
+    "r": 238,
+    "g": 242,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light violet tint."
+  },
+  {
+    "name": "Indigo 100",
+    "hex": "#E0E7FF",
+    "r": 224,
+    "g": 231,
+    "b": 255,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 1,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light indigo tint."
+  },
+  {
+    "name": "Indigo 200",
+    "hex": "#C7D2FE",
+    "r": 199,
+    "g": 210,
+    "b": 254,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light indigo tint. White dominant."
+  },
+  {
+    "name": "Indigo 300",
+    "hex": "#A5B4FC",
+    "r": 165,
+    "g": 180,
+    "b": 252,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light indigo. Increase Ultramarine/Magenta ratio."
+  },
+  {
+    "name": "Indigo 400",
+    "hex": "#818CF8",
+    "r": 129,
+    "g": 140,
+    "b": 248,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong indigo tint. Ultramarine dominant."
+  },
+  {
+    "name": "Indigo 500",
+    "hex": "#6366F1",
+    "r": 99,
+    "g": 102,
+    "b": 241,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "Deep blue-violet. Ultramarine Blue is dominant, Quinacridone Magenta adds the warm bias."
+  },
+  {
+    "name": "Indigo 600",
+    "hex": "#4F46E5",
+    "r": 79,
+    "g": 70,
+    "b": 229,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper shade of indigo."
+  },
+  {
+    "name": "Indigo 700",
+    "hex": "#4338CA",
+    "r": 67,
+    "g": 56,
+    "b": 202,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade, touch of Black to deepen."
+  },
+  {
+    "name": "Indigo 800",
+    "hex": "#3730A3",
+    "r": 55,
+    "g": 48,
+    "b": 163,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark indigo shade. Ultramarine and Black."
+  },
+  {
+    "name": "Indigo 900",
+    "hex": "#312E81",
+    "r": 49,
+    "g": 46,
+    "b": 129,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of indigo."
+  },
+  {
+    "name": "Indigo 950",
+    "hex": "#1E1B4B",
+    "r": 30,
+    "g": 27,
+    "b": 75,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black indigo."
+  },
+
+  {
+    "name": "Violet 50",
+    "hex": "#F5F3FF",
+    "r": 245,
+    "g": 243,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light violet tint."
+  },
+  {
+    "name": "Violet 100",
+    "hex": "#EDE9FE",
+    "r": 237,
+    "g": 233,
+    "b": 254,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 1,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light violet tint."
+  },
+  {
+    "name": "Violet 200",
+    "hex": "#DDD6FE",
+    "r": 221,
+    "g": 214,
+    "b": 254,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light violet tint."
+  },
+  {
+    "name": "Violet 300",
+    "hex": "#C4B5FD",
+    "r": 196,
+    "g": 181,
+    "b": 253,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light violet."
+  },
+  {
+    "name": "Violet 400",
+    "hex": "#A78BFA",
+    "r": 167,
+    "g": 139,
+    "b": 250,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong violet tint. Balanced Ultramarine/Magenta."
+  },
+  {
+    "name": "Violet 500",
+    "hex": "#8B5CF6",
+    "r": 139,
+    "g": 92,
+    "b": 246,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Pure violet. Balanced mix of Ultramarine Blue and Quinacridone Magenta."
+  },
+  {
+    "name": "Violet 600",
+    "hex": "#7C3AED",
+    "r": 124,
+    "g": 58,
+    "b": 237,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 5,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper violet. Magenta dominant."
+  },
+  {
+    "name": "Violet 700",
+    "hex": "#6D28D9",
+    "r": 109,
+    "g": 40,
+    "b": 217,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 5,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade, touch of Black to deepen."
+  },
+  {
+    "name": "Violet 800",
+    "hex": "#5B21B6",
+    "r": 91,
+    "g": 33,
+    "b": 182,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark violet shade. Black and Magenta."
+  },
+  {
+    "name": "Violet 900",
+    "hex": "#4C1D95",
+    "r": 76,
+    "g": 29,
+    "b": 149,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of violet."
+  },
+  {
+    "name": "Violet 950",
+    "hex": "#2E1065",
+    "r": 46,
+    "g": 16,
+    "b": 101,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black violet."
+  },
+
+  {
+    "name": "Purple 50",
+    "hex": "#FAF5FF",
+    "r": 250,
+    "g": 245,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light purple tint."
+  },
+  {
+    "name": "Purple 100",
+    "hex": "#F3E8FF",
+    "r": 243,
+    "g": 232,
+    "b": 255,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 1,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light purple tint."
+  },
+  {
+    "name": "Purple 200",
+    "hex": "#E9D5FF",
+    "r": 233,
+    "g": 213,
+    "b": 255,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light purple tint."
+  },
+  {
+    "name": "Purple 300",
+    "hex": "#D8B4FE",
+    "r": 216,
+    "g": 180,
+    "b": 254,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light purple."
+  },
+  {
+    "name": "Purple 400",
+    "hex": "#C084FC",
+    "r": 192,
+    "g": 132,
+    "b": 252,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong purple tint."
+  },
+  {
+    "name": "Purple 500",
+    "hex": "#A855F7",
+    "r": 168,
+    "g": 85,
+    "b": 247,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "Pure violet. Balanced mix of Ultramarine Blue and Quinacridone Magenta."
+  },
+  {
+    "name": "Purple 600",
+    "hex": "#9333EA",
+    "r": 147,
+    "g": 51,
+    "b": 234,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper purple shade."
+  },
+  {
+    "name": "Purple 700",
+    "hex": "#7E22CE",
+    "r": 126,
+    "g": 34,
+    "b": 206,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade, touch of Black to deepen."
+  },
+  {
+    "name": "Purple 800",
+    "hex": "#6B21A8",
+    "r": 107,
+    "g": 33,
+    "b": 168,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "Dark violet. Black is added to the Purple 500 mix for deep shadow."
+  },
+  {
+    "name": "Purple 900",
+    "hex": "#581C87",
+    "r": 88,
+    "g": 28,
+    "b": 135,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of purple."
+  },
+  {
+    "name": "Purple 950",
+    "hex": "#3B0764",
+    "r": 59,
+    "g": 7,
+    "b": 100,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black purple."
+  },
+
+  {
+    "name": "Fuchsia 50",
+    "hex": "#FCF5FF",
+    "r": 252,
+    "g": 245,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light fuchsia tint."
+  },
+  {
+    "name": "Fuchsia 100",
+    "hex": "#FBE4F9",
+    "r": 251,
+    "g": 228,
+    "b": 249,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light fuchsia tint."
+  },
+  {
+    "name": "Fuchsia 200",
+    "hex": "#F8C6F1",
+    "r": 248,
+    "g": 198,
+    "b": 241,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light fuchsia tint. White dominant."
+  },
+  {
+    "name": "Fuchsia 300",
+    "hex": "#F472B6",
+    "r": 244,
+    "g": 114,
+    "b": 182,
+    "mix": {
+      "white": 3,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light fuchsia. Magenta dominant."
+  },
+  {
+    "name": "Fuchsia 400",
+    "hex": "#E879F9",
+    "r": 232,
+    "g": 121,
+    "b": 249,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 5,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong fuchsia. Magenta dominant."
+  },
+  {
+    "name": "Fuchsia 500",
+    "hex": "#D946EF",
+    "r": 217,
+    "g": 70,
+    "b": 239,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 5,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Pure fuchsia. Requires White to lift the natural darkness of Magenta pigment."
+  },
+  {
+    "name": "Fuchsia 600",
+    "hex": "#C026D3",
+    "r": 192,
+    "g": 38,
+    "b": 211,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 6,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper fuchsia shade. Pure Magenta."
+  },
+  {
+    "name": "Fuchsia 700",
+    "hex": "#A21CAF",
+    "r": 162,
+    "g": 28,
+    "b": 175,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 5,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade, touch of Black to deepen."
+  },
+  {
+    "name": "Fuchsia 800",
+    "hex": "#86198F",
+    "r": 134,
+    "g": 25,
+    "b": 143,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark fuchsia shade. Black and Magenta."
+  },
+  {
+    "name": "Fuchsia 900",
+    "hex": "#701A75",
+    "r": 112,
+    "g": 26,
+    "b": 117,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of fuchsia."
+  },
+  {
+    "name": "Fuchsia 950",
+    "hex": "#4A044E",
+    "r": 74,
+    "g": 4,
+    "b": 78,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black fuchsia."
+  },
+
+  {
+    "name": "Pink 50",
+    "hex": "#FEF7F8",
+    "r": 254,
+    "g": 247,
+    "b": 248,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light pink tint."
+  },
+  {
+    "name": "Pink 100",
+    "hex": "#FCE7F3",
+    "r": 252,
+    "g": 231,
+    "b": 243,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light pink tint."
+  },
+  {
+    "name": "Pink 200",
+    "hex": "#FBCFE8",
+    "r": 251,
+    "g": 207,
+    "b": 232,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Light cool red. White is dominant, Quinacridone Magenta provides the hue."
+  },
+  {
+    "name": "Pink 300",
+    "hex": "#F9A8D4",
+    "r": 249,
+    "g": 168,
+    "b": 212,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light pink. Magenta dominant."
+  },
+  {
+    "name": "Pink 400",
+    "hex": "#F472B6",
+    "r": 244,
+    "g": 114,
+    "b": 182,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong pink tint. Magenta dominant."
+  },
+  {
+    "name": "Pink 500",
+    "hex": "#EC4899",
+    "r": 236,
+    "g": 72,
+    "b": 153,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Pure magenta hue. Requires White to lift the natural darkness of Magenta pigment."
+  },
+  {
+    "name": "Pink 600",
+    "hex": "#DB2777",
+    "r": 219,
+    "g": 39,
+    "b": 119,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 4,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper pink/rose shade. Magenta dominant, with a touch of Cad Red for warmth."
+  },
+  {
+    "name": "Pink 700",
+    "hex": "#BE185D",
+    "r": 190,
+    "g": 24,
+    "b": 93,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 4,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker rose shade. Black added to deepen."
+  },
+  {
+    "name": "Pink 800",
+    "hex": "#9D174D",
+    "r": 157,
+    "g": 23,
+    "b": 77,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 4,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark rose shade. Black and Umber for depth and complexity."
+  },
+  {
+    "name": "Pink 900",
+    "hex": "#831843",
+    "r": 131,
+    "g": 24,
+    "b": 67,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 3,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of rose."
+  },
+  {
+    "name": "Pink 950",
+    "hex": "#500724",
+    "r": 80,
+    "g": 7,
+    "b": 36,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 2,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black rose."
+  },
+
+  {
+    "name": "Rose 50",
+    "hex": "#FFF1F2",
+    "r": 255,
+    "g": 241,
+    "b": 242,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light rose tint."
+  },
+  {
+    "name": "Rose 100",
+    "hex": "#FFE4E6",
+    "r": 255,
+    "g": 228,
+    "b": 230,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light rose tint."
+  },
+  {
+    "name": "Rose 200",
+    "hex": "#FECDD3",
+    "r": 254,
+    "g": 205,
+    "b": 211,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light rose tint. White dominant."
+  },
+  {
+    "name": "Rose 300",
+    "hex": "#FDA4AF",
+    "r": 253,
+    "g": 164,
+    "b": 175,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light rose. Red dominant."
+  },
+  {
+    "name": "Rose 400",
+    "hex": "#FB7185",
+    "r": 251,
+    "g": 113,
+    "b": 133,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong rose tint. Red dominant."
+  },
+  {
+    "name": "Rose 500",
+    "hex": "#F43F5E",
+    "r": 244,
+    "g": 63,
+    "b": 94,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 5,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Pure rose hue. Cad Red with a slight Magenta bias."
+  },
+  {
+    "name": "Rose 600",
+    "hex": "#E11D48",
+    "r": 225,
+    "g": 29,
+    "b": 72,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 6,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper rose shade. Pure Red base."
+  },
+  {
+    "name": "Rose 700",
+    "hex": "#BE123C",
+    "r": 190,
+    "g": 18,
+    "b": 60,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 5,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade, touch of Black to deepen."
+  },
+  {
+    "name": "Rose 800",
+    "hex": "#9F1239",
+    "r": 159,
+    "g": 18,
+    "b": 57,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark rose shade. Black and Umber for depth."
+  },
+  {
+    "name": "Rose 900",
+    "hex": "#881337",
+    "r": 136,
+    "g": 19,
+    "b": 55,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of rose."
+  },
+  {
+    "name": "Rose 950",
+    "hex": "#43041F",
+    "r": 67,
+    "g": 4,
+    "b": 31,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black rose."
+  },
+
+  {
+    "name": "Red 50",
+    "hex": "#FEF2F2",
+    "r": 254,
+    "g": 242,
+    "b": 242,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light pink tint. Almost entirely White."
+  },
+  {
+    "name": "Red 100",
+    "hex": "#FEE2E2",
+    "r": 254,
+    "g": 226,
+    "b": 226,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light pink."
+  },
+  {
+    "name": "Red 200",
+    "hex": "#FECACA",
+    "r": 254,
+    "g": 202,
+    "b": 202,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "High tint. Add red very slowly to the white base."
+  },
+  {
+    "name": "Red 300",
+    "hex": "#FCA5A5",
+    "r": 252,
+    "g": 165,
+    "b": 165,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light red tint. White dominant."
+  },
+  {
+    "name": "Red 400",
+    "hex": "#F87171",
+    "r": 248,
+    "g": 113,
+    "b": 113,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong red tint. Red is dominant, with White added to lighten."
+  },
+  {
+    "name": "Red 500",
+    "hex": "#EF4444",
+    "r": 239,
+    "g": 68,
+    "b": 68,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Pure, vibrant red. Use Cad Red alone."
+  },
+  {
+    "name": "Red 600",
+    "hex": "#DC2626",
+    "r": 220,
+    "g": 38,
+    "b": 38,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Slightly darker shade. Base Red with a touch of Black to deepen."
+  },
+  {
+    "name": "Red 700",
+    "hex": "#B91C1C",
+    "r": 185,
+    "g": 28,
+    "b": 28,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deep red. Red and Black/Umber balanced."
+  },
+  {
+    "name": "Red 800",
+    "hex": "#991B1B",
+    "r": 153,
+    "g": 27,
+    "b": 27,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Deep, rich shade. Use Burnt Umber instead of Black for a warm, complex red-brown shadow."
+  },
+  {
+    "name": "Red 900",
+    "hex": "#7F1D1D",
+    "r": 127,
+    "g": 29,
+    "b": 29,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep, dark red."
+  },
+  {
+    "name": "Red 950",
+    "hex": "#450A0A",
+    "r": 69,
+    "g": 10,
+    "b": 10,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black red. High ratio of dark pigments."
+  },
+
+  {
+    "name": "Warm Red 50",
+    "hex": "#FFF1F2",
+    "r": 255,
+    "g": 241,
+    "b": 242,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light tint."
+  },
+  {
+    "name": "Warm Red 100",
+    "hex": "#FFE4E6",
+    "r": 255,
+    "g": 228,
+    "b": 230,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light tint."
+  },
+  {
+    "name": "Warm Red 200",
+    "hex": "#FECDD3",
+    "r": 254,
+    "g": 205,
+    "b": 211,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light rose tint. White dominant."
+  },
+  {
+    "name": "Warm Red 300",
+    "hex": "#FDA4AF",
+    "r": 253,
+    "g": 164,
+    "b": 175,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light rose. Red dominant."
+  },
+  {
+    "name": "Warm Red 400",
+    "hex": "#FB7185",
+    "r": 251,
+    "g": 113,
+    "b": 133,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong rose tint. Red dominant."
+  },
+  {
+    "name": "Warm Red 500",
+    "hex": "#F43F5E",
+    "r": 244,
+    "g": 63,
+    "b": 94,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 5,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Pure rose hue. Cad Red with a slight Magenta bias."
+  },
+  {
+    "name": "Warm Red 600",
+    "hex": "#E11D48",
+    "r": 225,
+    "g": 29,
+    "b": 72,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 6,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper rose shade. Pure Red base."
+  },
+  {
+    "name": "Warm Red 700",
+    "hex": "#BE123C",
+    "r": 190,
+    "g": 18,
+    "b": 60,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 5,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade, touch of Black to deepen."
+  },
+  {
+    "name": "Warm Red 800",
+    "hex": "#9F1239",
+    "r": 159,
+    "g": 18,
+    "b": 57,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark rose shade. Black and Umber for depth."
+  },
+  {
+    "name": "Warm Red 900",
+    "hex": "#881337",
+    "r": 136,
+    "g": 19,
+    "b": 55,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of rose."
+  },
+  {
+    "name": "Warm Red 950",
+    "hex": "#43041F",
+    "r": 67,
+    "g": 4,
+    "b": 31,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black rose."
+  },
+
+  {
+    "name": "Cool Red 50",
+    "hex": "#FEF7F8",
+    "r": 254,
+    "g": 247,
+    "b": 248,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light pink tint."
+  },
+  {
+    "name": "Cool Red 100",
+    "hex": "#FCE7F3",
+    "r": 252,
+    "g": 231,
+    "b": 243,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light pink tint."
+  },
+  {
+    "name": "Cool Red 200",
+    "hex": "#FBCFE8",
+    "r": 251,
+    "g": 207,
+    "b": 232,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Light cool red. White is dominant, Quinacridone Magenta provides the hue."
+  },
+  {
+    "name": "Cool Red 300",
+    "hex": "#F9A8D4",
+    "r": 249,
+    "g": 168,
+    "b": 212,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light pink. Magenta dominant."
+  },
+  {
+    "name": "Cool Red 400",
+    "hex": "#F472B6",
+    "r": 244,
+    "g": 114,
+    "b": 182,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong pink tint. Magenta dominant."
+  },
+  {
+    "name": "Cool Red 500",
+    "hex": "#EC4899",
+    "r": 236,
+    "g": 72,
+    "b": 153,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Pure magenta hue. Requires White to lift the natural darkness of Magenta pigment."
+  },
+  {
+    "name": "Cool Red 600",
+    "hex": "#DB2777",
+    "r": 219,
+    "g": 39,
+    "b": 119,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 4,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper pink/rose shade. Magenta dominant, with a touch of Cad Red for warmth."
+  },
+  {
+    "name": "Cool Red 700",
+    "hex": "#BE185D",
+    "r": 190,
+    "g": 24,
+    "b": 93,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 4,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker rose shade. Black added to deepen."
+  },
+  {
+    "name": "Cool Red 800",
+    "hex": "#9D174D",
+    "r": 157,
+    "g": 23,
+    "b": 77,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 4,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "Dark rose shade. Black and Umber for depth and complexity."
+  },
+  {
+    "name": "Cool Red 900",
+    "hex": "#831843",
+    "r": 131,
+    "g": 24,
+    "b": 67,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 3,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of rose."
+  },
+  {
+    "name": "Cool Red 950",
+    "hex": "#500724",
+    "r": 80,
+    "g": 7,
+    "b": 36,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 2,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black rose."
+  },
+
+  {
+    "name": "Crimson 50",
+    "hex": "#FFF1F2",
+    "r": 255,
+    "g": 241,
+    "b": 242,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light red tint."
+  },
+  {
+    "name": "Crimson 100",
+    "hex": "#FFE4E6",
+    "r": 255,
+    "g": 228,
+    "b": 230,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light red tint."
+  },
+  {
+    "name": "Crimson 200",
+    "hex": "#FECDD3",
+    "r": 254,
+    "g": 205,
+    "b": 211,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light red tint. White dominant."
+  },
+  {
+    "name": "Crimson 300",
+    "hex": "#FDA4AF",
+    "r": 253,
+    "g": 164,
+    "b": 175,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light red. Red dominant."
+  },
+  {
+    "name": "Crimson 400",
+    "hex": "#FB7185",
+    "r": 251,
+    "g": 113,
+    "b": 133,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong red tint. Red dominant."
+  },
+  {
+    "name": "Crimson 500",
+    "hex": "#F43F5E",
+    "r": 244,
+    "g": 63,
+    "b": 94,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 5,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Pure red hue."
+  },
+  {
+    "name": "Crimson 600",
+    "hex": "#E11D48",
+    "r": 225,
+    "g": 29,
+    "b": 72,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 6,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper red shade. Pure Red base."
+  },
+  {
+    "name": "Crimson 700",
+    "hex": "#BE123C",
+    "r": 190,
+    "g": 18,
+    "b": 60,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 5,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade, touch of Black to deepen."
+  },
+  {
+    "name": "Crimson 800",
+    "hex": "#9F1239",
+    "r": 159,
+    "g": 18,
+    "b": 57,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark red shade. Black and Umber for depth."
+  },
+  {
+    "name": "Crimson 900",
+    "hex": "#881337",
+    "r": 136,
+    "g": 19,
+    "b": 55,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of red."
+  },
+  {
+    "name": "Crimson 950",
+    "hex": "#43041F",
+    "r": 67,
+    "g": 4,
+    "b": 31,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black red."
+  },
+
+  {
+    "name": "Maroon 50",
+    "hex": "#FFF1F2",
+    "r": 255,
+    "g": 241,
+    "b": 242,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light tint."
+  },
+  {
+    "name": "Maroon 100",
+    "hex": "#FFE4E6",
+    "r": 255,
+    "g": 228,
+    "b": 230,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 1,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light tint."
+  },
+  {
+    "name": "Maroon 200",
+    "hex": "#FECDD3",
+    "r": 254,
+    "g": 205,
+    "b": 211,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light tint. White dominant."
+  },
+  {
+    "name": "Maroon 300",
+    "hex": "#FDA4AF",
+    "r": 253,
+    "g": 164,
+    "b": 175,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light. Red dominant."
+  },
+  {
+    "name": "Maroon 400",
+    "hex": "#FB7185",
+    "r": 251,
+    "g": 113,
+    "b": 133,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong tint. Red dominant."
+  },
+  {
+    "name": "Maroon 500",
+    "hex": "#F43F5E",
+    "r": 244,
+    "g": 63,
+    "b": 94,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 5,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Pure hue. Cad Red with a slight Magenta bias."
+  },
+  {
+    "name": "Maroon 600",
+    "hex": "#E11D48",
+    "r": 225,
+    "g": 29,
+    "b": 72,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 6,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper shade. Pure Red base."
+  },
+  {
+    "name": "Maroon 700",
+    "hex": "#BE123C",
+    "r": 190,
+    "g": 18,
+    "b": 60,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 5,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade, touch of Black to deepen."
+  },
+  {
+    "name": "Maroon 800",
+    "hex": "#9F1239",
+    "r": 159,
+    "g": 18,
+    "b": 57,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 4,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark shade. Black and Umber for depth."
+  },
+  {
+    "name": "Maroon 900",
+    "hex": "#881337",
+    "r": 136,
+    "g": 19,
+    "b": 55,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 3,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade."
+  },
+  {
+    "name": "Maroon 950",
+    "hex": "#43041F",
+    "r": 67,
+    "g": 4,
+    "b": 31,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 2,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black."
+  },
+
+  {
+    "name": "Cool Blue 50",
+    "hex": "#F0F9FF",
+    "r": 240,
+    "g": 249,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light blue tint."
+  },
+  {
+    "name": "Cool Blue 100",
+    "hex": "#E0F2FE",
+    "r": 224,
+    "g": 242,
+    "b": 254,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Very light blue tint."
+  },
+  {
+    "name": "Cool Blue 200",
+    "hex": "#BAE6FD",
+    "r": 186,
+    "g": 230,
+    "b": 253,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 2
+    },
+    "notes": "(Approximate Mix) Light, bright blue. White dominant."
+  },
+  {
+    "name": "Cool Blue 300",
+    "hex": "#7DD3FC",
+    "r": 125,
+    "g": 211,
+    "b": 252,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Bright blue tint."
+  },
+  {
+    "name": "Cool Blue 400",
+    "hex": "#38BDF8",
+    "r": 56,
+    "g": 189,
+    "b": 248,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Strong blue. Phthalo Blue dominant."
+  },
+  {
+    "name": "Cool Blue 500",
+    "hex": "#0EA5E9",
+    "r": 14,
+    "g": 165,
+    "b": 233,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Pure blue. Phthalo Blue dominant, with a touch of Ultramarine for warmth."
+  },
+  {
+    "name": "Cool Blue 600",
+    "hex": "#0284C7",
+    "r": 2,
+    "g": 132,
+    "b": 199,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 4
+    },
+    "notes": "(Approximate Mix) Deeper blue."
+  },
+  {
+    "name": "Cool Blue 700",
+    "hex": "#0369A2",
+    "r": 3,
+    "g": 105,
+    "b": 162,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 2,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Darker shade of blue."
+  },
+  {
+    "name": "Cool Blue 800",
+    "hex": "#075985",
+    "r": 7,
+    "g": 89,
+    "b": 133,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 2,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Dark blue shade. Black and Phthalo Blue."
+  },
+  {
+    "name": "Cool Blue 900",
+    "hex": "#0C4A6E",
+    "r": 12,
+    "g": 74,
+    "b": 110,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 3
+    },
+    "notes": "(Approximate Mix) Very deep shade."
+  },
+  {
+    "name": "Cool Blue 950",
+    "hex": "#082F49",
+    "r": 8,
+    "g": 47,
+    "b": 73,
+    "mix": {
+      "white": 0,
+      "black": 6,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Near black blue."
+  },
+
+  {
+    "name": "Warm Blue 50",
+    "hex": "#EFF6FF",
+    "r": 239,
+    "g": 246,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light blue tint."
+  },
+  {
+    "name": "Warm Blue 100",
+    "hex": "#DBEAFE",
+    "r": 219,
+    "g": 234,
+    "b": 254,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light blue tint."
+  },
+  {
+    "name": "Warm Blue 200",
+    "hex": "#BFDBFE",
+    "r": 191,
+    "g": 219,
+    "b": 254,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 2
+    },
+    "notes": "Light tint of blue. Needs more Phthalo (cool blue) to avoid a violet bias."
+  },
+  {
+    "name": "Warm Blue 300",
+    "hex": "#93C5FD",
+    "r": 147,
+    "g": 197,
+    "b": 253,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 2,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Light blue tint."
+  },
+  {
+    "name": "Warm Blue 400",
+    "hex": "#60A5FA",
+    "r": 96,
+    "g": 165,
+    "b": 250,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Strong blue tint. Ultramarine dominant."
+  },
+  {
+    "name": "Warm Blue 500",
+    "hex": "#3B82F6",
+    "r": 59,
+    "g": 130,
+    "b": 246,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 2,
+      "phthaloB": 1
+    },
+    "notes": "Balanced blue. Ultramarine gives depth, Phthalo keeps it slightly bright."
+  },
+  {
+    "name": "Warm Blue 600",
+    "hex": "#2563EB",
+    "r": 37,
+    "g": 99,
+    "b": 235,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Deeper blue shade."
+  },
+  {
+    "name": "Warm Blue 700",
+    "hex": "#1D4ED8",
+    "r": 29,
+    "g": 78,
+    "b": 216,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Darker blue shade."
+  },
+  {
+    "name": "Warm Blue 800",
+    "hex": "#1E40AF",
+    "r": 30,
+    "g": 64,
+    "b": 175,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 1
+    },
+    "notes": "Deep shade. Ultramarine is dominant; Burnt Umber neutralizes and deepens."
+  },
+  {
+    "name": "Warm Blue 900",
+    "hex": "#1E3A8A",
+    "r": 30,
+    "g": 58,
+    "b": 138,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 5,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of blue. Ultramarine dominant."
+  },
+  {
+    "name": "Warm Blue 950",
+    "hex": "#172554",
+    "r": 23,
+    "g": 37,
+    "b": 84,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black blue."
+  },
+
+  {
+    "name": "Indigo 50",
+    "hex": "#EEF2FF",
+    "r": 238,
+    "g": 242,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light violet tint."
+  },
+  {
+    "name": "Indigo 100",
+    "hex": "#E0E7FF",
+    "r": 224,
+    "g": 231,
+    "b": 255,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 1,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light indigo tint."
+  },
+  {
+    "name": "Indigo 200",
+    "hex": "#C7D2FE",
+    "r": 199,
+    "g": 210,
+    "b": 254,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light indigo tint. White dominant."
+  },
+  {
+    "name": "Indigo 300",
+    "hex": "#A5B4FC",
+    "r": 165,
+    "g": 180,
+    "b": 252,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light indigo. Increase Ultramarine/Magenta ratio."
+  },
+  {
+    "name": "Indigo 400",
+    "hex": "#818CF8",
+    "r": 129,
+    "g": 140,
+    "b": 248,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong indigo tint. Ultramarine dominant."
+  },
+  {
+    "name": "Indigo 500",
+    "hex": "#6366F1",
+    "r": 99,
+    "g": 102,
+    "b": 241,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "Deep blue-violet. Ultramarine Blue is dominant, Quinacridone Magenta adds the warm bias."
+  },
+  {
+    "name": "Indigo 600",
+    "hex": "#4F46E5",
+    "r": 79,
+    "g": 70,
+    "b": 229,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper shade of indigo."
+  },
+  {
+    "name": "Indigo 700",
+    "hex": "#4338CA",
+    "r": 67,
+    "g": 56,
+    "b": 202,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade, touch of Black to deepen."
+  },
+  {
+    "name": "Indigo 800",
+    "hex": "#3730A3",
+    "r": 55,
+    "g": 48,
+    "b": 163,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark indigo shade. Ultramarine and Black."
+  },
+  {
+    "name": "Indigo 900",
+    "hex": "#312E81",
+    "r": 49,
+    "g": 46,
+    "b": 129,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of indigo."
+  },
+  {
+    "name": "Indigo 950",
+    "hex": "#1E1B4B",
+    "r": 30,
+    "g": 27,
+    "b": 75,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black indigo."
+  },
+
+  {
+    "name": "Purple 50",
+    "hex": "#FAF5FF",
+    "r": 250,
+    "g": 245,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light purple tint."
+  },
+  {
+    "name": "Purple 100",
+    "hex": "#F3E8FF",
+    "r": 243,
+    "g": 232,
+    "b": 255,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 1,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light purple tint."
+  },
+  {
+    "name": "Purple 200",
+    "hex": "#E9D5FF",
+    "r": 233,
+    "g": 213,
+    "b": 255,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light purple tint."
+  },
+  {
+    "name": "Purple 300",
+    "hex": "#D8B4FE",
+    "r": 216,
+    "g": 180,
+    "b": 254,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light purple."
+  },
+  {
+    "name": "Purple 400",
+    "hex": "#C084FC",
+    "r": 192,
+    "g": 132,
+    "b": 252,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong purple tint."
+  },
+  {
+    "name": "Purple 500",
+    "hex": "#A855F7",
+    "r": 168,
+    "g": 85,
+    "b": 247,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "Pure violet. Balanced mix of Ultramarine Blue and Quinacridone Magenta."
+  },
+  {
+    "name": "Purple 600",
+    "hex": "#9333EA",
+    "r": 147,
+    "g": 51,
+    "b": 234,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper purple shade."
+  },
+  {
+    "name": "Purple 700",
+    "hex": "#7E22CE",
+    "r": 126,
+    "g": 34,
+    "b": 206,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade, touch of Black to deepen."
+  },
+  {
+    "name": "Purple 800",
+    "hex": "#6B21A8",
+    "r": 107,
+    "g": 33,
+    "b": 168,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "Dark violet. Black is added to the Purple 500 mix for deep shadow."
+  },
+  {
+    "name": "Purple 900",
+    "hex": "#581C87",
+    "r": 88,
+    "g": 28,
+    "b": 135,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of purple."
+  },
+  {
+    "name": "Purple 950",
+    "hex": "#3B0764",
+    "r": 59,
+    "g": 7,
+    "b": 100,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black purple."
+  },
+
+  {
+    "name": "Violet 50",
+    "hex": "#F5F3FF",
+    "r": 245,
+    "g": 243,
+    "b": 255,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light violet tint."
+  },
+  {
+    "name": "Violet 100",
+    "hex": "#EDE9FE",
+    "r": 237,
+    "g": 233,
+    "b": 254,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 1,
+      "ultraB": 1,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light violet tint."
+  },
+  {
+    "name": "Violet 200",
+    "hex": "#DDD6FE",
+    "r": 221,
+    "g": 214,
+    "b": 254,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light violet tint."
+  },
+  {
+    "name": "Violet 300",
+    "hex": "#C4B5FD",
+    "r": 196,
+    "g": 181,
+    "b": 253,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light violet."
+  },
+  {
+    "name": "Violet 400",
+    "hex": "#A78BFA",
+    "r": 167,
+    "g": 139,
+    "b": 250,
+    "mix": {
+      "white": 2,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Strong violet tint. Balanced Ultramarine/Magenta."
+  },
+  {
+    "name": "Violet 500",
+    "hex": "#8B5CF6",
+    "r": 139,
+    "g": 92,
+    "b": 246,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Pure violet. Balanced mix of Ultramarine Blue and Quinacridone Magenta."
+  },
+  {
+    "name": "Violet 600",
+    "hex": "#7C3AED",
+    "r": 124,
+    "g": 58,
+    "b": 237,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 5,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper violet. Magenta dominant."
+  },
+  {
+    "name": "Violet 700",
+    "hex": "#6D28D9",
+    "r": 109,
+    "g": 40,
+    "b": 217,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 5,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade, touch of Black to deepen."
+  },
+  {
+    "name": "Violet 800",
+    "hex": "#5B21B6",
+    "r": 91,
+    "g": 33,
+    "b": 182,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 4,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark violet shade. Black and Magenta."
+  },
+  {
+    "name": "Violet 900",
+    "hex": "#4C1D95",
+    "r": 76,
+    "g": 29,
+    "b": 149,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 3,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very deep shade of violet."
+  },
+  {
+    "name": "Violet 950",
+    "hex": "#2E1065",
+    "r": 46,
+    "g": 16,
+    "b": 101,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 2,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black violet."
+  },
+
+  {
+    "name": "Blue Gray 50",
+    "hex": "#F8FAFC",
+    "r": 248,
+    "g": 250,
+    "b": 252,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Highest tint. Almost pure white with a microscopic touch of blue/black."
+  },
+  {
+    "name": "Blue Gray 100",
+    "hex": "#F1F5F9",
+    "r": 241,
+    "g": 245,
+    "b": 249,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) High tint of blue-gray."
+  },
+  {
+    "name": "Blue Gray 200",
+    "hex": "#E2E8F0",
+    "r": 226,
+    "g": 232,
+    "b": 240,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Light gray, balanced with White and a touch of the two blues."
+  },
+  {
+    "name": "Blue Gray 300",
+    "hex": "#CBD5E1",
+    "r": 203,
+    "g": 213,
+    "b": 225,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Mid-light gray. Increase blue and dark components slightly."
+  },
+  {
+    "name": "Blue Gray 400",
+    "hex": "#94A3B8",
+    "r": 148,
+    "g": 163,
+    "b": 184,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Heavy blue-gray tone. White is still dominant, tempered by Burnt Umber and Ultramarine."
+  },
+  {
+    "name": "Blue Gray 500",
+    "hex": "#64748B",
+    "r": 100,
+    "g": 116,
+    "b": 139,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deep neutral blue/gray. Ultramarine is the main hue; Burnt Umber and White create the muted tone."
+  },
+  {
+    "name": "Blue Gray 600",
+    "hex": "#475569",
+    "r": 71,
+    "g": 85,
+    "b": 105,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade. Dominated by Ultramarine and Umber, with a touch of Black for depth."
+  },
+  {
+    "name": "Blue Gray 700",
+    "hex": "#334155",
+    "r": 51,
+    "g": 65,
+    "b": 85,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deep shade of blue-gray. Balanced Ultramarine, Umber, and Black."
+  },
+  {
+    "name": "Blue Gray 800",
+    "hex": "#1E293B",
+    "r": 30,
+    "g": 41,
+    "b": 59,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very dark blue-black. Heavy on Black and Ultramarine, Umber retains complexity."
+  },
+  {
+    "name": "Blue Gray 900",
+    "hex": "#0F172A",
+    "r": 15,
+    "g": 23,
+    "b": 42,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "Near black. Black is muted and complexified by Burnt Umber and Ultramarine Blue."
+  },
+  {
+    "name": "Blue Gray 950",
+    "hex": "#08101E",
+    "r": 8,
+    "g": 16,
+    "b": 30,
+    "mix": {
+      "white": 0,
+      "black": 6,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deepest shade. Requires high Black/Ultramarine ratio."
+  },
+
+  {
+    "name": "Cool Gray 50",
+    "hex": "#F8FAFC",
+    "r": 248,
+    "g": 250,
+    "b": 252,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Highest tint. Almost pure white with a microscopic touch of blue/black."
+  },
+  {
+    "name": "Cool Gray 100",
+    "hex": "#F1F5F9",
+    "r": 241,
+    "g": 245,
+    "b": 249,
+    "mix": {
+      "white": 8,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) High tint of blue-gray."
+  },
+  {
+    "name": "Cool Gray 200",
+    "hex": "#E2E8F0",
+    "r": 226,
+    "g": 232,
+    "b": 240,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Light gray, balanced with White and a touch of the two blues."
+  },
+  {
+    "name": "Cool Gray 300",
+    "hex": "#CBD5E1",
+    "r": 203,
+    "g": 213,
+    "b": 225,
+    "mix": {
+      "white": 6,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 1,
+      "phthaloB": 1
+    },
+    "notes": "(Approximate Mix) Mid-light gray. Increase blue and dark components slightly."
+  },
+  {
+    "name": "Cool Gray 400",
+    "hex": "#94A3B8",
+    "r": 148,
+    "g": 163,
+    "b": 184,
+    "mix": {
+      "white": 4,
+      "black": 0,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 2,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Heavy blue-gray tone. White is still dominant, tempered by Burnt Umber and Ultramarine."
+  },
+  {
+    "name": "Cool Gray 500",
+    "hex": "#64748B",
+    "r": 100,
+    "g": 116,
+    "b": 139,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deep neutral blue/gray. Ultramarine is the main hue; Burnt Umber and White create the muted tone."
+  },
+  {
+    "name": "Cool Gray 600",
+    "hex": "#475569",
+    "r": 71,
+    "g": 85,
+    "b": 105,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Darker shade. Dominated by Ultramarine and Umber, with a touch of Black for depth."
+  },
+  {
+    "name": "Cool Gray 700",
+    "hex": "#334155",
+    "r": 51,
+    "g": 65,
+    "b": 85,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deep shade of blue-gray. Balanced Ultramarine, Umber, and Black."
+  },
+  {
+    "name": "Cool Gray 800",
+    "hex": "#1E293B",
+    "r": 30,
+    "g": 41,
+    "b": 59,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 4,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very dark blue-black. Heavy on Black and Ultramarine, Umber retains complexity."
+  },
+  {
+    "name": "Cool Gray 900",
+    "hex": "#0F172A",
+    "r": 15,
+    "g": 23,
+    "b": 42,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "Near black. Black is muted and complexified by Burnt Umber and Ultramarine Blue."
+  },
+  {
+    "name": "Cool Gray 950",
+    "hex": "#08101E",
+    "r": 8,
+    "g": 16,
+    "b": 30,
+    "mix": {
+      "white": 0,
+      "black": 6,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 3,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deepest shade. Requires high Black/Ultramarine ratio."
+  },
+
+  {
+    "name": "Warm Gray 50",
+    "hex": "#FAFAF9",
+    "r": 250,
+    "g": 250,
+    "b": 249,
+    "mix": {
+      "white": 10,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near white, with a minimal warm tint."
+  },
+  {
+    "name": "Warm Gray 100",
+    "hex": "#F5F5F4",
+    "r": 245,
+    "g": 245,
+    "b": 244,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light, warm off-white."
+  },
+  {
+    "name": "Warm Gray 200",
+    "hex": "#E7E5E4",
+    "r": 231,
+    "g": 229,
+    "b": 228,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light, warm gray/beige. White and a touch of Umber."
+  },
+  {
+    "name": "Warm Gray 300",
+    "hex": "#D6D3D1",
+    "r": 214,
+    "g": 211,
+    "b": 209,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 1,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light stone color."
+  },
+  {
+    "name": "Warm Gray 400",
+    "hex": "#A8A29E",
+    "r": 168,
+    "g": 162,
+    "b": 158,
+    "mix": {
+      "white": 3,
+      "black": 0,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-tone taupe/stone. White is muted heavily by Burnt Umber."
+  },
+  {
+    "name": "Warm Gray 500",
+    "hex": "#78716C",
+    "r": 120,
+    "g": 113,
+    "b": 108,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dominant Burnt Umber with a touch of White."
+  },
+  {
+    "name": "Warm Gray 600",
+    "hex": "#57534E",
+    "r": 87,
+    "g": 83,
+    "b": 78,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 4,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark stone. Burnt Umber dominates, Black for shade."
+  },
+  {
+    "name": "Warm Gray 700",
+    "hex": "#44403C",
+    "r": 68,
+    "g": 64,
+    "b": 60,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 4,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper shade of stone/brown."
+  },
+  {
+    "name": "Warm Gray 800",
+    "hex": "#292524",
+    "r": 41,
+    "g": 37,
+    "b": 36,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very dark brown-black."
+  },
+  {
+    "name": "Warm Gray 900",
+    "hex": "#1C1917",
+    "r": 28,
+    "g": 25,
+    "b": 23,
+    "mix": {
+      "white": 0,
+      "black": 5,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black brown."
+  },
+  {
+    "name": "Warm Gray 950",
+    "hex": "#0D0B0A",
+    "r": 13,
+    "g": 11,
+    "b": 10,
+    "mix": {
+      "white": 0,
+      "black": 7,
+      "umber": 2,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deepest brown-black."
+  },
+
+  {
+    "name": "Brown 50",
+    "hex": "#FAF5EF",
+    "r": 250,
+    "g": 245,
+    "b": 239,
+    "mix": {
+      "white": 9,
+      "black": 0,
+      "umber": 0,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Extremely light beige tint."
+  },
+  {
+    "name": "Brown 100",
+    "hex": "#F5EAD5",
+    "r": 245,
+    "g": 234,
+    "b": 213,
+    "mix": {
+      "white": 7,
+      "black": 0,
+      "umber": 1,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very light beige/tan."
+  },
+  {
+    "name": "Brown 200",
+    "hex": "#EAE0C5",
+    "r": 234,
+    "g": 224,
+    "b": 197,
+    "mix": {
+      "white": 5,
+      "black": 0,
+      "umber": 2,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Light brown/tan. White and Umber dominant."
+  },
+  {
+    "name": "Brown 300",
+    "hex": "#D4C2A5",
+    "r": 212,
+    "g": 194,
+    "b": 165,
+    "mix": {
+      "white": 3,
+      "black": 0,
+      "umber": 3,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-light brown."
+  },
+  {
+    "name": "Brown 400",
+    "hex": "#B49A76",
+    "r": 180,
+    "g": 154,
+    "b": 118,
+    "mix": {
+      "white": 1,
+      "black": 0,
+      "umber": 4,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Mid-tone brown. Burnt Umber dominant."
+  },
+  {
+    "name": "Brown 500",
+    "hex": "#92714D",
+    "r": 146,
+    "g": 113,
+    "b": 77,
+    "mix": {
+      "white": 0,
+      "black": 0,
+      "umber": 5,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Pure brown hue. Burnt Umber dominant."
+  },
+  {
+    "name": "Brown 600",
+    "hex": "#7A5E3E",
+    "r": 122,
+    "g": 94,
+    "b": 62,
+    "mix": {
+      "white": 0,
+      "black": 1,
+      "umber": 5,
+      "cadY": 1,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deeper shade of brown."
+  },
+  {
+    "name": "Brown 700",
+    "hex": "#61472B",
+    "r": 97,
+    "g": 71,
+    "b": 43,
+    "mix": {
+      "white": 0,
+      "black": 2,
+      "umber": 5,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Dark brown."
+  },
+  {
+    "name": "Brown 800",
+    "hex": "#4D361F",
+    "r": 77,
+    "g": 54,
+    "b": 31,
+    "mix": {
+      "white": 0,
+      "black": 3,
+      "umber": 4,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Very dark brown."
+  },
+  {
+    "name": "Brown 900",
+    "hex": "#3E2918",
+    "r": 62,
+    "g": 41,
+    "b": 24,
+    "mix": {
+      "white": 0,
+      "black": 4,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Near black brown."
+  },
+  {
+    "name": "Brown 950",
+    "hex": "#21150C",
+    "r": 33,
+    "g": 21,
+    "b": 12,
+    "mix": {
+      "white": 0,
+      "black": 6,
+      "umber": 3,
+      "cadY": 0,
+      "lemonY": 0,
+      "cadR": 0,
+      "mag": 0,
+      "ultraB": 0,
+      "phthaloB": 0
+    },
+    "notes": "(Approximate Mix) Deepest brown-black."
+  }
+]

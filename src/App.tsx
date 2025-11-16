@@ -54,11 +54,11 @@ function App() {
   };
 
   const handleZoomIn = () => {
-    setScale((prev) => Math.min(prev + 0.25, 5));
+    setScale((prev) => Math.min(prev + 0.1, 5));
   };
 
   const handleZoomOut = () => {
-    setScale((prev) => Math.max(prev - 0.25, 0.1));
+    setScale((prev) => Math.max(prev - 0.1, 0.1));
   };
 
   const handleResetZoom = () => {
@@ -180,7 +180,7 @@ function App() {
 
       // Set the loaded paint layer - PaintCanvas will restore it
       setLoadedPaintLayer(data.canvas.paintLayer);
-      
+
       // Reset after a short delay to allow PaintCanvas to process it
       setTimeout(() => {
         setLoadedPaintLayer(null);
@@ -198,23 +198,25 @@ function App() {
       const currentImageData = paintCanvasRef.current?.getCurrentImageData();
 
       if (!currentImageData || !sketchImageDataUrl) {
-        alert("No canvas data to export. Please upload an image and start painting first.");
+        alert(
+          "No canvas data to export. Please upload an image and start painting first."
+        );
         return;
       }
 
       // Ask user if they want to include the original colored/posterized image
       const includeOriginal = window.confirm(
         "Do you want to include the original colored image in the export?\n\n" +
-        "Click OK to export with the original colored/posterized image as background.\n" +
-        "Click Cancel to export with only the grayscale sketch outline and your painting."
+          "Click OK to export with the original colored/posterized image as background.\n" +
+          "Click Cancel to export with only the grayscale sketch outline and your painting."
       );
 
       await exportCanvasAsImage(sketchImageDataUrl, currentImageData, {
         includeOriginal,
         originalImageDataUrl: imageDataUrl || undefined,
-        filename: 'my-painting.png'
+        filename: "my-painting.png",
       });
-      
+
       alert("Image exported successfully!");
     } catch (error) {
       console.error("Export error:", error);
