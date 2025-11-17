@@ -70,6 +70,7 @@ export default function ColorPalette({
             }`}
             style={{ backgroundColor: color.value }}
             title={color.name}
+            aria-label={color.name}
           />
         ))}
       </div>

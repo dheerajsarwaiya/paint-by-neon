@@ -350,7 +350,13 @@ const PaintCanvas = forwardRef<PaintCanvasRef, PaintCanvasProps>((props, ref) =>
         <canvas
           ref={drawingCanvasRef}
           className={`absolute top-0 left-0 ${
-            isPanMode ? "pointer-events-none" : "cursor-crosshair"
+            isPanMode 
+              ? "pointer-events-none" 
+              : toolType === "brush" 
+                ? "cursor-brush" 
+                : toolType === "spray" 
+                  ? "cursor-spray" 
+                  : "cursor-eraser"
           }`}
           {...(!isPanMode && {
             onMouseDown: startDrawing,
