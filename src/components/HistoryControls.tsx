@@ -67,6 +67,7 @@ export default function HistoryControls({
           title="Export as Image"
         >
           <Download size={16} />
+          <span className="text-sm font-medium">Export</span>
         </button>{" "}
         {/* Save/Load Controls */}
         <SaveProgressControls
