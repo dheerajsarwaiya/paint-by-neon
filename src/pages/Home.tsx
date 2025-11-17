@@ -232,8 +232,8 @@ function Home() {
         <div className="max-w-[1800px] mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-gradient-to-br from-lime-500 to-orange-600">
-                <Palette className="text-white" size={24} />
+              <div className="p-2 rounded-lg bg-gradient-to-br from-gray-300 to-gray-800">
+                <Palette className="text-[#39FF14]" size={24} />
               </div>
               <div>
                 <h1 className="flex gap-2 text-2xl font-bold text-amber-500">
