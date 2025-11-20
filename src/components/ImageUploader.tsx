@@ -27,7 +27,7 @@ export default function ImageUploader({
     if (!file) return;
 
     // Check if it's a .paintoverart file
-    if (file.name.endsWith(".paintoverart")) {
+    if (file.name.endsWith(".paintbyneon")) {
       if (onProjectLoad) {
         onProjectLoad(file);
       }
@@ -87,7 +87,7 @@ export default function ImageUploader({
         </span>
         <input
           type="file"
-          accept="image/*,.paintoverart"
+          accept="image/*,.paintbyneon"
           onChange={handleFileChange}
           disabled={isProcessing}
           className="hidden"

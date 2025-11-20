@@ -4,12 +4,13 @@ import { Palette, HelpCircle } from "lucide-react";
 import ImageUploader from "../components/ImageUploader";
 import { saveProject, loadProject } from "../utils/projectSave";
 import { exportCanvasAsImage } from "../utils/exportCanvas";
-import PaintCanvas from "../components/PaintCanvas";
+import PaintCanvas, { PaintCanvasRef } from "../components/PaintCanvas";
 import ColorPalette from "../components/ColorPalette";
 import BrushControls, { ToolType } from "../components/BrushControls";
 import CanvasControls from "../components/CanvasControls";
 import HistoryControls from "../components/HistoryControls";
 import ColorHighlightOverlay from "../components/ColorHighlightOverlay";
+import LayersPanel, { Layer } from "../components/LayersPanel";
 // import { Analytics } from "@vercel/analytics/next";
 
 function Home() {
@@ -28,15 +29,27 @@ function Home() {
   const [offsetY, setOffsetY] = useState(0);
   // const [imageLocked, setImageLocked] = useState(false);
   // const [imageOpacity, setImageOpacity] = useState(0.5);
-  const [history, setHistory] = useState<ImageData[]>([]);
-  const [historyStep, setHistoryStep] = useState(-1);
+  
+  // Layers state management
+  const [layers, setLayers] = useState<Layer[]>([
+    { id: 0, name: "Layer 0", visible: true, isSketch: true },
+    { id: 1, name: "Layer 1", visible: true },
+    { id: 2, name: "Layer 2", visible: true },
+    { id: 3, name: "Layer 3", visible: true },
+  ]);
+  const [activeLayerId, setActiveLayerId] = useState(1);
+  
+  // Global undo/redo history across all layers
+  interface HistorySnapshot {
+    layers: Record<number, ImageData>;
+  }
+  const [globalHistory, setGlobalHistory] = useState<HistorySnapshot[]>([]);
+  const [globalHistoryStep, setGlobalHistoryStep] = useState(-1);
   const [triggerUndo, setTriggerUndo] = useState(0);
   const [triggerRedo, setTriggerRedo] = useState(0);
   const [isColorHighlightEnabled, setIsColorHighlightEnabled] = useState(false);
-  const [loadedPaintLayer, setLoadedPaintLayer] = useState<string | null>(null);
-  const paintCanvasRef = useRef<{
-    getCurrentImageData: () => ImageData | null;
-  }>(null);
+  const [loadedPaintLayers, setLoadedPaintLayers] = useState<Record<number, string | null>>({});
+  const paintCanvasRef = useRef<PaintCanvasRef>(null);
 
   const handleImageUpload = (
     dataUrl: string,
@@ -49,10 +62,18 @@ function Home() {
     setScale(1);
     setOffsetX(0);
     setOffsetY(0);
-    setHistory([]);
-    setHistoryStep(-1);
+    setGlobalHistory([]);
+    setGlobalHistoryStep(-1);
     setIsColorHighlightEnabled(false);
-    setLoadedPaintLayer(null); // Reset loaded paint layer for new uploads
+    setLoadedPaintLayers({}); // Reset loaded paint layers for new uploads
+    // Reset layers visibility
+    setLayers([
+      { id: 0, name: "Layer 0", visible: true, isSketch: true },
+      { id: 1, name: "Layer 1", visible: true },
+      { id: 2, name: "Layer 2", visible: true },
+      { id: 3, name: "Layer 3", visible: true },
+    ]);
+    setActiveLayerId(1);
   };
 
   const handleZoomIn = () => {
@@ -75,48 +96,96 @@ function Home() {
   };
 
   const handleHistoryUpdate = useCallback(
-    (imageData: ImageData) => {
-      const newHistory = history.slice(0, historyStep + 1);
-      newHistory.push(imageData);
-      setHistory(newHistory);
-      setHistoryStep(newHistory.length - 1);
+    (imageData: ImageData, layerId: number) => {
+      // Get all current layer states
+      const allLayersData = paintCanvasRef.current?.getAllLayersImageData() || {};
+      
+      // Filter out null values and create clean layers object
+      const cleanLayers: Record<number, ImageData> = {};
+      for (const [id, data] of Object.entries(allLayersData)) {
+        if (data) {
+          cleanLayers[parseInt(id)] = data;
+        }
+      }
+      
+      // Update the changed layer
+      cleanLayers[layerId] = imageData;
+      
+      const snapshot: HistorySnapshot = {
+        layers: cleanLayers,
+      };
+      
+      // Add to global history, removing any future states if we're in the middle of undo stack
+      const newHistory = globalHistory.slice(0, globalHistoryStep + 1);
+      newHistory.push(snapshot);
+      
+      setGlobalHistory(newHistory);
+      setGlobalHistoryStep(newHistory.length - 1);
     },
-    [history, historyStep]
+    [globalHistory, globalHistoryStep]
   );
 
   const handleUndo = () => {
-    if (historyStep > 0) {
-      setHistoryStep((prev) => prev - 1);
+    if (globalHistoryStep > 0) {
+      setGlobalHistoryStep((prev) => prev - 1);
       setTriggerUndo((prev) => prev + 1);
     }
   };
 
   const handleRedo = () => {
-    if (historyStep < history.length - 1) {
-      setHistoryStep((prev) => prev + 1);
+    if (globalHistoryStep < globalHistory.length - 1) {
+      setGlobalHistoryStep((prev) => prev + 1);
       setTriggerRedo((prev) => prev + 1);
     }
   };
 
   const handleClear = () => {
-    if (window.confirm("Are you sure you want to clear all your painting?")) {
-      setHistory([]);
-      setHistoryStep(-1);
-      setImageDataUrl(imageDataUrl);
-      setSketchImageDataUrl(sketchImageDataUrl);
+    if (window.confirm(`Are you sure you want to clear all painting on Layer ${activeLayerId}?`)) {
+      // Clear only affects the current active layer
+      // We'll trigger the canvas to clear and add to history
+      const canvasRef = paintCanvasRef.current;
+      if (canvasRef) {
+        const layerImageData = canvasRef.getLayerImageData(activeLayerId);
+        if (layerImageData) {
+          // Create a blank image data
+          const blankImageData = new ImageData(layerImageData.width, layerImageData.height);
+          handleHistoryUpdate(blankImageData, activeLayerId);
+          setTriggerUndo((prev) => prev + 1); // Trigger a refresh
+        }
+      }
     }
   };
 
   const handleUndoRedoComplete = () => {};
 
+  const handleLayerSelect = (layerId: number) => {
+    if (layerId !== 0) {
+      setActiveLayerId(layerId);
+    }
+  };
+
+  const handleLayerVisibilityToggle = (layerId: number) => {
+    setLayers((prev) =>
+      prev.map((layer) =>
+        layer.id === layerId ? { ...layer, visible: !layer.visible } : layer
+      )
+    );
+  };
+
   const handleSaveProgress = async (): Promise<void> => {
     try {
-      const currentImageData = paintCanvasRef.current?.getCurrentImageData();
-
-      if (!currentImageData || !imageDataUrl || !sketchImageDataUrl) {
+      if (!imageDataUrl || !sketchImageDataUrl) {
         alert(
           "No project data to save. Please upload an image and start painting first."
         );
+        return;
+      }
+
+      // Get all layers image data
+      const allLayersImageData = paintCanvasRef.current?.getAllLayersImageData();
+      
+      if (!allLayersImageData) {
+        alert("No canvas data to save.");
         return;
       }
 
@@ -124,7 +193,7 @@ function Home() {
         imageDataUrl,
         sketchImageDataUrl,
         dominantColors,
-        currentImageData,
+        allLayersImageData,
         {
           brushSize,
           brushColor,
@@ -135,6 +204,10 @@ function Home() {
           isEraser: toolType === "eraser",
           isPanMode,
           isColorHighlightEnabled,
+        },
+        {
+          activeLayerId,
+          layersVisibility: layers.reduce((acc, layer) => ({ ...acc, [layer.id]: layer.visible }), {}),
         }
       );
 
@@ -177,11 +250,33 @@ function Home() {
       setIsColorHighlightEnabled(data.settings.isColorHighlightEnabled);
 
       // Clear history for fresh start
-      setHistory([]);
-      setHistoryStep(-1);
+      setGlobalHistory([]);
+      setGlobalHistoryStep(-1);
 
-      // Set the loaded paint layer - PaintCanvas will restore it
-      setLoadedPaintLayer(data.canvas.paintLayer);
+      // Restore layers state
+      if (data.layers) {
+        // New format with multi-layer support
+        setActiveLayerId(data.layers.activeLayerId);
+        setLayers((prev) =>
+          prev.map((layer) => ({
+            ...layer,
+            visible: data.layers!.layersVisibility[layer.id] ?? layer.visible,
+          }))
+        );
+        
+        // Load all paint layers
+        if (data.canvas.paintLayers) {
+          const loadedLayers: Record<number, string | null> = {};
+          for (const [layerIdStr, layerData] of Object.entries(data.canvas.paintLayers)) {
+            loadedLayers[parseInt(layerIdStr)] = layerData;
+          }
+          setLoadedPaintLayers(loadedLayers);
+        }
+      } else if (data.canvas.paintLayer) {
+        // Legacy format - load to layer 1 for backwards compatibility
+        setLoadedPaintLayers({ 1: data.canvas.paintLayer });
+        setActiveLayerId(1);
+      }
 
       alert("Project loaded successfully!");
     } catch (error) {
@@ -192,9 +287,10 @@ function Home() {
 
   const handleExportImage = async (): Promise<void> => {
     try {
-      const currentImageData = paintCanvasRef.current?.getCurrentImageData();
+      // Get all layers image data
+      const allLayersImageData = paintCanvasRef.current?.getAllLayersImageData();
 
-      if (!currentImageData || !sketchImageDataUrl) {
+      if (!allLayersImageData || !sketchImageDataUrl) {
         alert(
           "No canvas data to export. Please upload an image and start painting first."
         );
@@ -208,10 +304,15 @@ function Home() {
           "Click Cancel to export with only the grayscale sketch outline and your painting."
       );
 
-      await exportCanvasAsImage(sketchImageDataUrl, currentImageData, {
+      // Get layers visibility
+      const layersVisibility = layers.reduce((acc, layer) => ({ ...acc, [layer.id]: layer.visible }), {});
+      const sketchVisible = layers.find(l => l.id === 0)?.visible ?? true;
+
+      await exportCanvasAsImage(sketchImageDataUrl, allLayersImageData, layersVisibility, {
         includeOriginal,
         originalImageDataUrl: imageDataUrl || undefined,
         filename: "my-painting.png",
+        sketchVisible,
       });
 
       alert("Image exported successfully!");
@@ -392,8 +493,8 @@ function Home() {
               </div>
               <div className="w-full overflow-x-auto sm:w-auto">
                 <HistoryControls
-                  canUndo={historyStep > 0}
-                  canRedo={historyStep < history.length - 1}
+                  canUndo={globalHistoryStep > 0}
+                  canRedo={globalHistoryStep < globalHistory.length - 1}
                   onUndo={handleUndo}
                   onRedo={handleRedo}
                   onClear={handleClear}
@@ -407,10 +508,18 @@ function Home() {
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
               {/* Canvas area - shows first on mobile, second on desktop */}
               <div className="order-1 space-y-4 lg:order-2 lg:col-span-3">
-                {/* Canvas area */}
-                <div
-                  className="p-3 bg-white rounded-lg shadow-lg sm:p-6 aspect-square"
-                >
+                {/* Canvas area with overlay layers panel */}
+                <div className="relative p-3 bg-white rounded-lg shadow-lg sm:p-6 aspect-square">
+                  {/* Layers Panel - overlaid on top-right corner */}
+                  <div className="absolute top-3 right-3 z-10 max-w-[200px]">
+                    <LayersPanel
+                      layers={layers}
+                      activeLayerId={activeLayerId}
+                      onLayerSelect={handleLayerSelect}
+                      onLayerVisibilityToggle={handleLayerVisibilityToggle}
+                    />
+                  </div>
+                  
                   <PaintCanvas
                     ref={paintCanvasRef}
                     sketchImageDataUrl={sketchImageDataUrl}
@@ -423,14 +532,16 @@ function Home() {
                     offsetX={offsetX}
                     offsetY={offsetY}
                     onPan={handlePan}
-                    // imageOpacity={imageOpacity}
                     onHistoryUpdate={handleHistoryUpdate}
                     triggerUndo={triggerUndo}
                     triggerRedo={triggerRedo}
                     onUndoRedoComplete={handleUndoRedoComplete}
-                    undoHistory={history}
-                    historyStep={historyStep}
-                    loadedPaintLayer={loadedPaintLayer}
+                    globalHistory={globalHistory}
+                    globalHistoryStep={globalHistoryStep}
+                    loadedPaintLayers={loadedPaintLayers}
+                    activeLayerId={activeLayerId}
+                    layersVisibility={layers.reduce((acc, layer) => ({ ...acc, [layer.id]: layer.visible }), {})}
+                    sketchVisible={layers.find(l => l.id === 0)?.visible ?? true}
                   />
                 </div>
               </div>

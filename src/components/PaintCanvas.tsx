@@ -2,13 +2,16 @@ import { useEffect, useRef, useState, useCallback, forwardRef, useImperativeHand
 import { Point } from "../types/canvas";
 import type { ToolType } from "./BrushControls";
 import {
-  // getCursorPosition,
   drawLine,
   drawSpray,
   loadImageToCanvas,
 } from "../utils/canvasHelpers";
 import { getCanvasImageData } from "../utils/canvasSerializer";
 import { base64ToImageData } from "../utils/canvasSerializer";
+
+interface HistorySnapshot {
+  layers: Record<number, ImageData>;
+}
 
 interface PaintCanvasProps {
   sketchImageDataUrl: string | null;
@@ -21,18 +24,22 @@ interface PaintCanvasProps {
   offsetX: number;
   offsetY: number;
   onPan: (deltaX: number, deltaY: number) => void;
-  // imageOpacity: number;
-  onHistoryUpdate: (imageData: ImageData) => void;
+  onHistoryUpdate: (imageData: ImageData, layerId: number) => void;
   triggerUndo: number;
   triggerRedo: number;
   onUndoRedoComplete: () => void;
-  undoHistory: ImageData[];
-  historyStep: number;
-  loadedPaintLayer?: string | null; // Base64 encoded paint layer to restore
+  globalHistory: HistorySnapshot[];
+  globalHistoryStep: number;
+  loadedPaintLayers?: Record<number, string | null>;
+  activeLayerId: number;
+  layersVisibility: Record<number, boolean>;
+  sketchVisible: boolean;
 }
 
 export interface PaintCanvasRef {
   getCurrentImageData: () => ImageData | null;
+  getLayerImageData: (layerId: number) => ImageData | null;
+  getAllLayersImageData: () => Record<number, ImageData | null>;
 }
 
 const PaintCanvas = forwardRef<PaintCanvasRef, PaintCanvasProps>((props, ref) => {
@@ -51,13 +58,18 @@ const PaintCanvas = forwardRef<PaintCanvasRef, PaintCanvasProps>((props, ref) =>
     triggerUndo,
     triggerRedo,
     onUndoRedoComplete,
-    undoHistory,
-    historyStep,
-    loadedPaintLayer,
+    globalHistory,
+    globalHistoryStep,
+    loadedPaintLayers,
+    activeLayerId,
+    layersVisibility,
+    sketchVisible,
   } = props;
 
-  const backgroundCanvasRef = useRef<HTMLCanvasElement>(null);
-  const drawingCanvasRef = useRef<HTMLCanvasElement>(null);
+  const sketchCanvasRef = useRef<HTMLCanvasElement>(null);
+  const layer1CanvasRef = useRef<HTMLCanvasElement>(null);
+  const layer2CanvasRef = useRef<HTMLCanvasElement>(null);
+  const layer3CanvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const [isDrawing, setIsDrawing] = useState(false);
@@ -65,75 +77,129 @@ const PaintCanvas = forwardRef<PaintCanvasRef, PaintCanvasProps>((props, ref) =>
   const [isPanning, setIsPanning] = useState(false);
   const [lastPanPoint, setLastPanPoint] = useState<Point | null>(null);
 
+  // Map layer IDs to canvas refs
+  const getCanvasRef = (layerId: number) => {
+    switch (layerId) {
+      case 1:
+        return layer1CanvasRef;
+      case 2:
+        return layer2CanvasRef;
+      case 3:
+        return layer3CanvasRef;
+      default:
+        return null;
+    }
+  };
+
   // Expose methods to parent component
   useImperativeHandle(ref, () => ({
     getCurrentImageData: () => {
-      if (!drawingCanvasRef.current) return null;
-      return getCanvasImageData(drawingCanvasRef.current);
+      const canvasRef = getCanvasRef(activeLayerId);
+      if (!canvasRef?.current) return null;
+      return getCanvasImageData(canvasRef.current);
+    },
+    getLayerImageData: (layerId: number) => {
+      const canvasRef = getCanvasRef(layerId);
+      if (!canvasRef?.current) return null;
+      return getCanvasImageData(canvasRef.current);
+    },
+    getAllLayersImageData: () => {
+      const result: Record<number, ImageData | null> = {};
+      [1, 2, 3].forEach((layerId) => {
+        const canvasRef = getCanvasRef(layerId);
+        if (canvasRef?.current) {
+          result[layerId] = getCanvasImageData(canvasRef.current);
+        } else {
+          result[layerId] = null;
+        }
+      });
+      return result;
     },
   }));
 
-  // Track if we've already loaded a paint layer to avoid re-initializing
-  const hasLoadedPaintLayerRef = useRef(false);
+  // Track if we've already loaded paint layers to avoid re-initializing
+  const hasLoadedPaintLayersRef = useRef(false);
   const lastSketchUrlRef = useRef<string | null>(null);
 
   useEffect(() => {
     const setupCanvases = async () => {
       if (
         sketchImageDataUrl &&
-        backgroundCanvasRef.current &&
-        drawingCanvasRef.current
+        sketchCanvasRef.current &&
+        layer1CanvasRef.current &&
+        layer2CanvasRef.current &&
+        layer3CanvasRef.current
       ) {
         try {
           // Check if this is a new sketch image (new upload vs. loaded project)
           const isNewSketchImage = lastSketchUrlRef.current !== sketchImageDataUrl;
-          if (isNewSketchImage && !loadedPaintLayer) {
-            // Only reset if it's a new sketch without a paint layer to load
-            hasLoadedPaintLayerRef.current = false;
+          if (isNewSketchImage && !loadedPaintLayers) {
+            hasLoadedPaintLayersRef.current = false;
           }
           lastSketchUrlRef.current = sketchImageDataUrl;
 
-          // Wait for the background image to load and set canvas dimensions
-          await loadImageToCanvas(
-            sketchImageDataUrl,
-            backgroundCanvasRef.current
-          );
+          // Wait for the sketch image to load and set canvas dimensions
+          await loadImageToCanvas(sketchImageDataUrl, sketchCanvasRef.current);
 
-          // Now set the drawing canvas to match the background canvas dimensions
-          const backgroundCanvas = backgroundCanvasRef.current;
-          const drawingCanvas = drawingCanvasRef.current;
+          // Now set all paint layer canvases to match the sketch canvas dimensions
+          const sketchCanvas = sketchCanvasRef.current;
+          const paintCanvases = [
+            layer1CanvasRef.current,
+            layer2CanvasRef.current,
+            layer3CanvasRef.current,
+          ];
 
-          drawingCanvas.width = backgroundCanvas.width;
-          drawingCanvas.height = backgroundCanvas.height;
+          paintCanvases.forEach((canvas) => {
+            canvas.width = sketchCanvas.width;
+            canvas.height = sketchCanvas.height;
+          });
 
-          const ctx = drawingCanvas.getContext("2d");
-          if (!ctx) return;
-
-          // Load paint layer after canvas is set up
-          if (loadedPaintLayer && !hasLoadedPaintLayerRef.current) {
-            console.log("Loading paint layer from saved file...");
+          // Load or initialize paint layers
+          if (loadedPaintLayers && !hasLoadedPaintLayersRef.current) {
+            console.log("Loading paint layers from saved file...");
             try {
-              const imageData = await base64ToImageData(loadedPaintLayer);
-              ctx.putImageData(imageData, 0, 0);
-              // Add to history
-              onHistoryUpdate(imageData);
-              hasLoadedPaintLayerRef.current = true;
-              console.log("Paint layer loaded successfully!");
+              for (const [layerIdStr, base64Data] of Object.entries(loadedPaintLayers)) {
+                const layerId = parseInt(layerIdStr);
+                if (base64Data && [1, 2, 3].includes(layerId)) {
+                  const canvasRef = getCanvasRef(layerId);
+                  if (canvasRef?.current) {
+                    const ctx = canvasRef.current.getContext("2d");
+                    if (ctx) {
+                      const imageData = await base64ToImageData(base64Data);
+                      ctx.putImageData(imageData, 0, 0);
+                      onHistoryUpdate(imageData, layerId);
+                    }
+                  }
+                }
+              }
+              hasLoadedPaintLayersRef.current = true;
+              console.log("Paint layers loaded successfully!");
             } catch (error) {
-              console.error("Failed to restore paint layer:", error);
+              console.error("Failed to restore paint layers:", error);
             }
-          } else if (!loadedPaintLayer && undoHistory.length === 0 && !hasLoadedPaintLayerRef.current) {
-            // Initialize the drawing canvas only if we haven't loaded a paint layer
-            console.log("Initializing empty canvas...");
-            ctx.clearRect(0, 0, drawingCanvas.width, drawingCanvas.height);
-            const imageData = ctx.getImageData(
-              0,
-              0,
-              drawingCanvas.width,
-              drawingCanvas.height
-            );
-            onHistoryUpdate(imageData);
-            hasLoadedPaintLayerRef.current = true;
+          } else if (!loadedPaintLayers && !hasLoadedPaintLayersRef.current) {
+            // Initialize empty paint layers
+            console.log("Initializing empty paint layers...");
+            // Create initial snapshot with all empty layers
+            const shouldCreateInitialSnapshot = globalHistory.length === 0;
+            
+            paintCanvases.forEach((canvas) => {
+              const ctx = canvas.getContext("2d");
+              if (ctx) {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+              }
+            });
+            
+            // Create initial snapshot with all layers for first paint stroke to be undoable
+            if (shouldCreateInitialSnapshot) {
+              const ctx1 = layer1CanvasRef.current.getContext("2d");
+              if (ctx1) {
+                const imageData1 = ctx1.getImageData(0, 0, layer1CanvasRef.current.width, layer1CanvasRef.current.height);
+                onHistoryUpdate(imageData1, 1);
+              }
+            }
+            
+            hasLoadedPaintLayersRef.current = true;
           }
         } catch (error) {
           console.error("Failed to load image to canvas:", error);
@@ -142,60 +208,81 @@ const PaintCanvas = forwardRef<PaintCanvasRef, PaintCanvasProps>((props, ref) =>
     };
 
     setupCanvases();
-  }, [sketchImageDataUrl, loadedPaintLayer]);
+  }, [sketchImageDataUrl, loadedPaintLayers]);
+
+  const performUndo = useCallback(() => {
+    if (globalHistoryStep >= 0) {
+      const snapshot = globalHistory[globalHistoryStep];
+      if (snapshot) {
+        // Restore all layers from the snapshot
+        for (const [layerIdStr, imageData] of Object.entries(snapshot.layers)) {
+          const layerId = parseInt(layerIdStr);
+          const canvasRef = getCanvasRef(layerId);
+          if (canvasRef?.current) {
+            const ctx = canvasRef.current.getContext("2d");
+            if (ctx) {
+              ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+              ctx.putImageData(imageData, 0, 0);
+            }
+          }
+        }
+      }
+    }
+  }, [globalHistory, globalHistoryStep]);
+
+  const performRedo = useCallback(() => {
+    if (globalHistoryStep < globalHistory.length - 1) {
+      const snapshot = globalHistory[globalHistoryStep + 1];
+      if (snapshot) {
+        // Restore all layers from the snapshot
+        for (const [layerIdStr, imageData] of Object.entries(snapshot.layers)) {
+          const layerId = parseInt(layerIdStr);
+          const canvasRef = getCanvasRef(layerId);
+          if (canvasRef?.current) {
+            const ctx = canvasRef.current.getContext("2d");
+            if (ctx) {
+              ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+              ctx.putImageData(imageData, 0, 0);
+            }
+          }
+        }
+      }
+    }
+  }, [globalHistory, globalHistoryStep]);
 
   useEffect(() => {
-    if (triggerUndo > 0 && drawingCanvasRef.current) {
+    if (triggerUndo > 0) {
       performUndo();
       onUndoRedoComplete();
     }
-  }, [triggerUndo]);
+  }, [triggerUndo, performUndo, onUndoRedoComplete]);
 
   useEffect(() => {
-    if (triggerRedo > 0 && drawingCanvasRef.current) {
+    if (triggerRedo > 0) {
       performRedo();
       onUndoRedoComplete();
     }
-  }, [triggerRedo]);
-
-  const performUndo = () => {
-    if (historyStep > 0 && drawingCanvasRef.current) {
-      const ctx = drawingCanvasRef.current.getContext("2d");
-      if (ctx) {
-        const previousState = undoHistory[historyStep - 1];
-        ctx.putImageData(previousState, 0, 0);
-      }
-    }
-  };
-
-  const performRedo = () => {
-    if (historyStep < undoHistory.length - 1 && drawingCanvasRef.current) {
-      const ctx = drawingCanvasRef.current.getContext("2d");
-      if (ctx) {
-        const nextState = undoHistory[historyStep + 1];
-        ctx.putImageData(nextState, 0, 0);
-      }
-    }
-  };
+  }, [triggerRedo, performRedo, onUndoRedoComplete]);
 
   const saveToHistory = () => {
-    if (drawingCanvasRef.current) {
-      const ctx = drawingCanvasRef.current.getContext("2d");
+    const canvasRef = getCanvasRef(activeLayerId);
+    if (canvasRef?.current) {
+      const ctx = canvasRef.current.getContext("2d");
       if (ctx) {
         const imageData = ctx.getImageData(
           0,
           0,
-          drawingCanvasRef.current.width,
-          drawingCanvasRef.current.height
+          canvasRef.current.width,
+          canvasRef.current.height
         );
-        onHistoryUpdate(imageData);
+        onHistoryUpdate(imageData, activeLayerId);
       }
     }
   };
 
   const getCanvasCoordinates = useCallback(
     (event: React.MouseEvent | React.TouchEvent): Point | null => {
-      if (!drawingCanvasRef.current || !containerRef.current) return null;
+      if (!containerRef.current) return null;
 
       const container = containerRef.current;
       const containerRect = container.getBoundingClientRect();
@@ -246,7 +333,7 @@ const PaintCanvas = forwardRef<PaintCanvasRef, PaintCanvasProps>((props, ref) =>
     }
 
     const point = getCanvasCoordinates(event);
-    if (!point || !drawingCanvasRef.current) return;
+    if (!point) return;
 
     setIsDrawing(true);
     setLastPoint(point);
@@ -273,11 +360,14 @@ const PaintCanvas = forwardRef<PaintCanvasRef, PaintCanvasProps>((props, ref) =>
       return;
     }
 
-    if (!isDrawing || !drawingCanvasRef.current || !lastPoint) {
+    if (!isDrawing || !lastPoint) {
       return;
     }
 
-    const canvas = drawingCanvasRef.current;
+    const canvasRef = getCanvasRef(activeLayerId);
+    if (!canvasRef?.current) return;
+
+    const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     if (!ctx) {
       return;
@@ -289,10 +379,8 @@ const PaintCanvas = forwardRef<PaintCanvasRef, PaintCanvasProps>((props, ref) =>
     }
 
     if (toolType === "spray") {
-      // For spray paint, draw at current point
       drawSpray(ctx, currentPoint.x, currentPoint.y, brushColor, brushSize, brushOpacity);
     } else {
-      // For brush and eraser, draw lines
       drawLine(
         ctx,
         lastPoint.x,
@@ -359,23 +447,91 @@ const PaintCanvas = forwardRef<PaintCanvasRef, PaintCanvasProps>((props, ref) =>
           position: "relative",
         }}
       >
+        {/* Sketch Layer (Layer 0) */}
         <canvas
-          ref={backgroundCanvasRef}
+          ref={sketchCanvasRef}
           className="absolute top-0 left-0"
-          style={{ imageRendering: "auto" }}
+          style={{
+            imageRendering: "auto",
+            opacity: sketchVisible ? 1 : 0,
+            pointerEvents: "none",
+          }}
         />
+        
+        {/* Paint Layer 1 */}
         <canvas
-          ref={drawingCanvasRef}
+          ref={layer1CanvasRef}
           className={`absolute top-0 left-0 ${
             isPanMode 
               ? "pointer-events-none" 
-              : toolType === "brush" 
-                ? "cursor-brush" 
-                : toolType === "spray" 
-                  ? "cursor-spray" 
-                  : "cursor-eraser"
+              : activeLayerId === 1 && layersVisibility[1]
+                ? toolType === "brush" 
+                  ? "cursor-brush" 
+                  : toolType === "spray" 
+                    ? "cursor-spray" 
+                    : "cursor-eraser"
+                : "pointer-events-none"
           }`}
-          {...(!isPanMode && {
+          style={{
+            opacity: layersVisibility[1] ? 1 : 0,
+          }}
+          {...(!isPanMode && activeLayerId === 1 && layersVisibility[1] && {
+            onMouseDown: startDrawing,
+            onMouseMove: draw,
+            onMouseUp: stopDrawing,
+            onMouseLeave: stopDrawing,
+            onTouchStart: startDrawing,
+            onTouchMove: draw,
+            onTouchEnd: stopDrawing,
+          })}
+        />
+        
+        {/* Paint Layer 2 */}
+        <canvas
+          ref={layer2CanvasRef}
+          className={`absolute top-0 left-0 ${
+            isPanMode 
+              ? "pointer-events-none" 
+              : activeLayerId === 2 && layersVisibility[2]
+                ? toolType === "brush" 
+                  ? "cursor-brush" 
+                  : toolType === "spray" 
+                    ? "cursor-spray" 
+                    : "cursor-eraser"
+                : "pointer-events-none"
+          }`}
+          style={{
+            opacity: layersVisibility[2] ? 1 : 0,
+          }}
+          {...(!isPanMode && activeLayerId === 2 && layersVisibility[2] && {
+            onMouseDown: startDrawing,
+            onMouseMove: draw,
+            onMouseUp: stopDrawing,
+            onMouseLeave: stopDrawing,
+            onTouchStart: startDrawing,
+            onTouchMove: draw,
+            onTouchEnd: stopDrawing,
+          })}
+        />
+        
+        {/* Paint Layer 3 */}
+        <canvas
+          ref={layer3CanvasRef}
+          className={`absolute top-0 left-0 ${
+            isPanMode 
+              ? "pointer-events-none" 
+              : activeLayerId === 3 && layersVisibility[3]
+                ? toolType === "brush" 
+                  ? "cursor-brush" 
+                  : toolType === "spray" 
+                    ? "cursor-spray" 
+                    : "cursor-eraser"
+                : "pointer-events-none"
+          }`}
+          style={{
+            opacity: layersVisibility[3] ? 1 : 0,
+          }}
+          {...(!isPanMode && activeLayerId === 3 && layersVisibility[3] && {
             onMouseDown: startDrawing,
             onMouseMove: draw,
             onMouseUp: stopDrawing,

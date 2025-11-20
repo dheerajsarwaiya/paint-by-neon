@@ -14,13 +14,13 @@ export function generateSaveFilename(): string {
 }
 
 /**
- * Save current project state to a .paintoverart file
+ * Save current project state to a .paintoverart file with multi-layer support
  */
 export async function saveProject(
   originalImage: string,
   sketchImage: string,
   dominantColors: string[],
-  paintLayerImageData: ImageData | null,
+  paintLayersImageData: Record<number, ImageData | null>,
   settings: {
     brushSize: number;
     brushColor: string;
@@ -31,17 +31,40 @@ export async function saveProject(
     isEraser: boolean;
     isPanMode: boolean;
     isColorHighlightEnabled: boolean;
+  },
+  layersState: {
+    activeLayerId: number;
+    layersVisibility: Record<number, boolean>;
   }
 ): Promise<SaveResult> {
   try {
-    if (!paintLayerImageData) {
+    // Convert all layer ImageData to base64
+    const paintLayers: Record<number, string> = {};
+    let hasAnyData = false;
+    let dimensions = { width: 0, height: 0 };
+
+    for (const [layerIdStr, imageData] of Object.entries(paintLayersImageData)) {
+      if (imageData) {
+        const layerId = parseInt(layerIdStr);
+        paintLayers[layerId] = imageDataToBase64(imageData);
+        hasAnyData = true;
+        
+        // Get dimensions from first valid layer
+        if (dimensions.width === 0) {
+          dimensions = {
+            width: imageData.width,
+            height: imageData.height,
+          };
+        }
+      }
+    }
+
+    if (!hasAnyData) {
       return {
         success: false,
         error: "No paint layer data to save",
       };
     }
-
-    const paintLayerBase64 = imageDataToBase64(paintLayerImageData);
 
     const saveData: PaintOverArtSave = {
       version: CURRENT_VERSION,
@@ -52,12 +75,10 @@ export async function saveProject(
         dominantColors,
       },
       canvas: {
-        paintLayer: paintLayerBase64,
-        dimensions: {
-          width: paintLayerImageData.width,
-          height: paintLayerImageData.height,
-        },
+        paintLayers,
+        dimensions,
       },
+      layers: layersState,
       settings,
     };
 
@@ -183,7 +204,8 @@ function validateSaveData(data: unknown): string | null {
   }
 
   const canvas = saveData.canvas as Record<string, unknown>;
-  if (!canvas.paintLayer) {
+  // Support both old (paintLayer) and new (paintLayers) formats
+  if (!canvas.paintLayer && !canvas.paintLayers) {
     return "Missing paint layer data";
   }
 
