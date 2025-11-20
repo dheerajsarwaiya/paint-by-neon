@@ -7,8 +7,13 @@ export interface PaintOverArtSave {
     dominantColors: string[]; // Extracted colors
   };
   canvas: {
-    paintLayer: string; // Base64 encoded current paint layer
+    paintLayer?: string; // Base64 encoded current paint layer (legacy - for backwards compatibility)
+    paintLayers?: Record<number, string>; // Base64 encoded paint layers by layer ID (new multi-layer support)
     dimensions: { width: number; height: number };
+  };
+  layers?: {
+    activeLayerId: number;
+    layersVisibility: Record<number, boolean>;
   };
   settings: {
     brushSize: number;
